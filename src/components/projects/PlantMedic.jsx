@@ -9,7 +9,6 @@ import Monitor from '../../assets/monitor.svg';
 import GUHwebpage from '../../assets/GUHwebpage.png';
 import PlantMedicImg from '../../assets/bush_logocircle.png';
 import {BsPatchCheckFill} from 'react-icons/bs';
-import {ImGoogleDrive} from 'react-icons/im';
 
 
 const PassTheTime = () => { 
@@ -43,7 +42,7 @@ const PassTheTime = () => {
 
 	var i = 0;
 	const Move2 = () => {
-	  if (i == 0) {
+	  if (i === 0) {
 	    i = 1;
 	    var Java = document.getElementById("Java");
 	    var XML = document.getElementById("XML");
@@ -76,13 +75,13 @@ const PassTheTime = () => {
 				<div className="image-container">
 					<div className="monitor-container-alt">
 						<div className="blank-bg-monitor"></div>
-						<img src={Monitor}></img>
-						<img className="GUHwebpage" src={GUHwebpage}></img>
+						<img src={Monitor} alt="Monitor SVG"></img>
+						<img className="GUHwebpage" src={GUHwebpage} alt="GUH webpage Image"></img>
 					</div>
 					<div className="phone-container">
 						<div id="img4" className="color-bg-phone"></div>
-						<img id="img4" className="plantMedic-image" src={PlantMedicImg}></img>
-						<img id="img4" className="phone-img" src={Phone}></img>
+						<img id="img4" className="plantMedic-image" src={PlantMedicImg} alt="Plant medic app image"></img>
+						<img id="img4" className="phone-img" src={Phone} alt="Phone SVG"></img>
 					</div>
 				</div>
 
@@ -93,10 +92,10 @@ const PassTheTime = () => {
 
 					<div className="title__buttons">
 						<div className="gitHub">
-							<a href="https://github.com/joethompson1/PlantMedic" target="_blank">Github <FaGithub /></a>
+							<a href="https://github.com/joethompson1/PlantMedic" target="_blank" rel="noreferrer">Github <FaGithub /></a>
 						</div>
 						<div className="gitHub">
-							<a href="https://greatunihack19.devpost.com/project-gallery" target="_blank">Hackathon Webpage <FaHackerrank /></a>
+							<a href="https://greatunihack19.devpost.com/project-gallery" target="_blank" rel="noreferrer">Hackathon Webpage <FaHackerrank /></a>
 						</div>
 					</div>
 				</div>

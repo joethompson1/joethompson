@@ -1,20 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './projects.css';
 import Nav from '../nav/Nav';
-import ME from '../../assets/me-about.jpeg';
 import Notebook from '../../assets/notebook.svg';
 import Monitor from '../../assets/monitor.svg';
 import Phone from '../../assets/iphone.svg';
 import SoulbounderAnimation from './SoulbounderAnimation';
 import PassTheTimeImg from '../../assets/passTheTimeGameplay.png';
-import PassTheTimeApp from '../../assets/passTheTime.png';
 import myProjects from '../../assets/projects.svg';
 import DatachainImg from '../../assets/homePage.png';
 import PlantMedicImg from '../../assets/bush_logocircle.png';
-import {FaAward} from 'react-icons/fa';
-import {FiUsers} from 'react-icons/fi';
-import {VscFolderLibrary} from 'react-icons/vsc';
-import PaintSplatter from '../../assets/paintSplatter.svg'
 import $ from 'jquery';
 import { useNavigate } from "react-router-dom";
 
@@ -81,13 +75,13 @@ const Projects = () => {
 							</div>
 							{isHovering1 && (
 								<div className="img-container">
-									<img id="dataChain-img" className="datachain-image" src={DatachainImg}></img>
-									<img id="img1" src={Monitor}></img>
+									<img id="dataChain-img" className="datachain-image" src={DatachainImg} alt="Datachain Image"></img>
+									<img id="img1" src={Monitor} alt="Monitor SVG"></img>
 								</div>
 							)}
 							{isHovering2 && (
 								<div className="img-container">
-									<img id="img2" className="notebook-img" src={Notebook}></img>
+									<img id="img2" className="notebook-img" src={Notebook} alt="Notebook SVG"></img>
 									<div id="blank-bg" className="blank-bg"></div>
 									<div id="soulbounderAnimation" className="loadingContainer">
 										<SoulbounderAnimation className="soulbounder-img"/>
@@ -98,15 +92,15 @@ const Projects = () => {
 							{isHovering3 && (
 								<div className="img-container">
 									<div id="img3" className="blank-bg-phone"></div>
-									<img id="passTheTime-image" className="passTheTime-image" src={PassTheTimeImg}></img>
-									<img id="img3" className="phone-img" src={Phone}></img>
+									<img id="passTheTime-image" className="passTheTime-image" src={PassTheTimeImg} alt="Pass the time Image"></img>
+									<img id="img3" className="phone-img" src={Phone} alt="Phone SVG"></img>
 								</div>
 							)}
 							{isHovering4 && (
 								<div className="img-container">
 									<div id="img4" className="color-bg-phone"></div>
-									<img id="img4" className="plantMedic-image" src={PlantMedicImg}></img>
-									<img id="img4" className="phone-img" src={Phone}></img>
+									<img id="img4" className="plantMedic-image" src={PlantMedicImg} alt="Plant Medic App Image"></img>
+									<img id="img4" className="phone-img" src={Phone} alt="Phone SVG"></img>
 								</div>
 							)}
 						</div>

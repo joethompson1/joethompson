@@ -8,7 +8,6 @@ import Monitor from '../../assets/monitor.svg';
 import SoulbounderAnimation from './SoulbounderAnimation'
 import SoulbounderCreateSBT from '../../assets/soulbounderCreateSBT.png';
 import {BsPatchCheckFill} from 'react-icons/bs';
-import {ImGoogleDrive} from 'react-icons/im';
 
 
 const Soulbounder = () => { 
@@ -43,7 +42,7 @@ const Soulbounder = () => {
 
 	var i = 0;
 	const Move2 = () => {
-	  if (i == 0) {
+	  if (i === 0) {
 	    i = 1;
 	    var HTML = document.getElementById("HTML");
 	    var CSS = document.getElementById("CSS");
@@ -81,15 +80,15 @@ const Soulbounder = () => {
 				<div className="image-container">
 					<div className="monitor-container">
 						<div className="blank-bg-monitor"></div>
-						<img src={Monitor}></img>
+						<img src={Monitor} alt="Monitor SVG"></img>
 						<div id="soulbounderAnimation" className="loadingContainer">
 							<SoulbounderAnimation className="soulbounder-img"/>
 						</div>
 					</div>
 					<div className="notebook-container">
 						<div className="blank-bg-sbt"></div>
-						<img className="soulbounderCreateSBT" src={SoulbounderCreateSBT}></img>
-						<img src={Notebook}></img>
+						<img className="soulbounderCreateSBT" src={SoulbounderCreateSBT} alt="Soulbounder Website Image"></img>
+						<img src={Notebook} alt="Notebook SVG"></img>
 					</div>
 				</div>
 
@@ -99,7 +98,7 @@ const Soulbounder = () => {
 					</div>
 
 					<div className="gitHub">
-						<a href="https://www.github.com/joethompson1/Soulbounder" target="_blank">Github <FaGithub /></a>
+						<a href="https://www.github.com/joethompson1/Soulbounder" target="_blank" rel="noreferrer">Github <FaGithub /></a>
 					</div>
 				</div>
 

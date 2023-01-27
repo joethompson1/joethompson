@@ -1,8 +1,6 @@
 import React, { useState, useRef }  from 'react';
 import './contact.css';
 import Nav from '../nav/Nav';
-import {MdOutlineEmail} from 'react-icons/md';
-import {BsWhatsapp} from 'react-icons/bs';
 import emailjs from 'emailjs-com';
 import ContactMe from '../../assets/contact.svg';
 import $ from 'jquery';
@@ -55,7 +53,7 @@ const Contact = () => {
 				<h1>Contact Me</h1>
 				<div className="container contact__container__inner">
 					<div className="contact__options">
-						<img className="contactMeSVG" src={ContactMe}></img>
+						<img className="contactMeSVG" src={ContactMe} alt="Contact Me SVG"></img>
 					</div>
 
 					<form ref={form} onSubmit={sendEmail}>

@@ -41,7 +41,7 @@ const Datachain = () => {
 
 	var i = 0;
 	const Move2 = () => {
-	  if (i == 0) {
+	  if (i === 0) {
 	    i = 1;
 	    var HTML = document.getElementById("HTML");
 	    var CSS = document.getElementById("CSS");
@@ -80,13 +80,13 @@ const Datachain = () => {
 			<div className="container project__container">
 				<div className="image-container">
 					<div className="monitor-container">
-						<img className="datachain-image" src={DatachainImg}></img>
-						<img src={Monitor}></img>
+						<img className="datachain-image" src={DatachainImg} alt="Datachain Image"></img>
+						<img src={Monitor} alt="Monitor SVG"></img>
 					</div>
 					<div className="notebook-container">
 						<div className="blank-bg"></div>
-						<img className="studentAccountPageWithDegree-image" src={StudentAccountPageWithDegree}></img>
-						<img src={Notebook}></img>
+						<img className="studentAccountPageWithDegree-image" src={StudentAccountPageWithDegree} alt="Student Account Page with Degree"></img>
+						<img src={Notebook} alt="Notebook SVG"></img>
 					</div>
 				</div>
 
@@ -97,7 +97,7 @@ const Datachain = () => {
 
 					<div className="title__buttons">
 						<div className="gitHub">
-							<a href="https://github.com/joethompson1/Datachain" target="_blank">Github <FaGithub /></a>
+							<a href="https://github.com/joethompson1/Datachain" target="_blank" rel="noreferrer">Github <FaGithub /></a>
 						</div>
 						<div className="gitHub">
 							<a href="https://drive.google.com/file/d/1ZvBKH6Ezdz7gkq5NJTThPwjUGQTCqliJ/view?usp=sharing" target="_blank">Project Report <ImGoogleDrive /></a>

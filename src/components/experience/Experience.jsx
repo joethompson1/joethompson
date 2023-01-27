@@ -113,10 +113,6 @@ const Experience = () => {
 		    	reveals[i].classList.add("fade-out-top");
 		    }
 
-		    // if (reveals[i].classList.contains('fade-bottom')) {
-		    // 	reveals[i].classList.add("fade-out-bottom");
-		    // }
-
 		    if (reveals[i].classList.contains("experience__frontend")) {
 		      	run = false;
 		    }
@@ -132,7 +128,7 @@ const Experience = () => {
 
 	var i = 0;
 	const Move = () => {
-	  if (i == 0) {
+	  if (i === 0) {
 	    i = 1;
 	    var html = document.getElementById("html");
 	    var css = document.getElementById("css");
@@ -172,10 +168,10 @@ const Experience = () => {
 	const showInfo = () => {
 
 			var reveal = document.querySelector(".experience__frontend-title");
-			var paragraph = document.querySelector(".experience__frontend-p");
 			var windowWidth = window.innerWidth;
 			var width;
 			var maxWidth;
+			var id;
 
 
 			if (!reveal.classList.contains('active')) {
@@ -190,7 +186,7 @@ const Experience = () => {
 					maxWidth = 75;
 				}
 
-				var id = setInterval(frame2, 10);
+				id = setInterval(frame2, 10);
 
 				function frame2() {
 					if (width >= maxWidth) {
@@ -214,7 +210,7 @@ const Experience = () => {
 					maxWidth = 45;
 				}
 
-				var id = setInterval(frame3, 10);
+				id = setInterval(frame3, 10);
 
 				function frame3() {
 					if (width <= maxWidth) {
@@ -236,7 +232,7 @@ const Experience = () => {
 		<section id="experience" className="experience__section">
 			<div className="containerExperience experience__title__container">
 				<div className="titleImg">
-					<img className="experienceSVG" src={ExperienceSVG}></img>
+					<img className="experienceSVG" src={ExperienceSVG} alt="Experience SVG"></img>
 				</div>
 
 				<div className="title">
@@ -260,7 +256,7 @@ const Experience = () => {
 				{isViewingOnPhone && (
 					<div className="workExperience__content">
 						<div className="workExperience__svgContainer">
-							<img className="IBMSvg" src={IBMSvg}></img>
+							<img className="IBMSvg" src={IBMSvg} alt="IBM SVG"></img>
 						</div>
 						<div className="workExperience__textContainer">
 
@@ -301,7 +297,7 @@ const Experience = () => {
 				{!isViewingOnPhone && (
 					<div className="workExperience__content">
 						<div className="workExperience__svgContainer">
-							<img className="IBMSvg" src={IBMSvg}></img>
+							<img className="IBMSvg" src={IBMSvg} alt="IBM SVG"></img>
 						</div>
 						<div className="workExperience__textContainer">
 							<div className="sub-title">
@@ -394,13 +390,13 @@ const Experience = () => {
 			<div className="containerExperience hackathons__container">
 				{isViewingOnPhone && (
 					<div className="hackathonTitle__container">
-						<img id="img3" className="" src={HackathonPicCropped}></img>
+						<img id="img3" className="" src={HackathonPicCropped} alt="Hackathon group picture"></img>
 						<h2 className="reveal fade-top">Hackathons:</h2>
 					</div>
 				)}
 				{!isViewingOnPhone && (
 					<div className="hackathonTitle__container">
-						<img id="img3" className="" src={HackathonPic}></img>
+						<img id="img3" className="" src={HackathonPic} alt="Hackathon group picture"></img>
 						<h2 className="reveal fade-top">Hackathons:</h2>
 					</div>
 
@@ -409,7 +405,7 @@ const Experience = () => {
 
 				<div className="hackathon__container hackathonLeft">
 					<div className="hackathonImg__container reveal fade-right ">
-						<img className="hackathonImg" src={GreatUniHack}></img>
+						<img className="hackathonImg" src={GreatUniHack} alt="Great Uni Hack Picture"></img>
 					</div>
 
 					<div className="hackathonContents__container reveal fade-left">
@@ -422,7 +418,7 @@ const Experience = () => {
 							</div>
 						)}
 						{!isViewingOnPhone && (
-							<p className="GUHPrizes">- <i>1st Place: Winner of the AstraZeneca Sustainability Prize</i> <b><a className="" target="_blank" href="https://github.com/joethompson1">Github</a></b></p>
+							<p className="GUHPrizes">- <i>1st Place: Winner of the AstraZeneca Sustainability Prize</i> <b><a className="" target="_blank" rel="noreferrer" href="https://github.com/joethompson1">Github</a></b></p>
 						)}
 						{isViewingOnPhone && (
 							<div className="technologies">
@@ -448,13 +444,13 @@ const Experience = () => {
 					</div>
 
 					<div className="hackathonImg__container reveal fade-left">
-						<img className="morganStanleyImg" src={MorganStanleyCoding}></img>
+						<img className="morganStanleyImg" src={MorganStanleyCoding} alt="Morgan Stanley image"></img>
 					</div>
 				</div>
 
 				<div className="hackathon__container hackathonLeft">
 					<div className="hackathonImg__container reveal fade-right">
-						<img className="hackathonImg" src={StudentHack}></img>
+						<img className="hackathonImg" src={StudentHack} alt="Student hackathon Image"></img>
 					</div>
 
 					<div className="hackathonContents__container reveal fade-left">
@@ -477,7 +473,7 @@ const Experience = () => {
 					</div>
 
 					<div className="hackathonImg__container reveal fade-left">
-						<img className="iXImage" src={IX}></img>
+						<img className="iXImage" src={IX} alt="iX Image"></img>
 					</div>
 				</div>
 			</div>

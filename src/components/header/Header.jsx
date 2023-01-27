@@ -1,8 +1,6 @@
 import React from 'react';
 import './header.css';
-import CTA from './CTA';
 import Welcome from '../../assets/welcome1.svg';
-import HeaderSocial from './HeaderSocial';
 import Nav from '../nav/Nav';
 
 const Header = () => {
