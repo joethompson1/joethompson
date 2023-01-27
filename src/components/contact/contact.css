@@ -204,8 +204,7 @@ input, textarea {
 	.container.contact__container {
 		width: var(--container-width-md);
 		border-radius: 5vw;
-/*		padding: 1vw 4vw 4vw 4vw;*/
-/*		height: 100%;*/
+		top: 40%;
 	}
 
 

@@ -329,6 +329,15 @@ img {
 /* ------------------ Media Queries (Small devices) -------------------- */
 
 @media screen and (max-width: 600px) {
+	.about__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 40% 60%;
+		gap: 0%;
+		height: 75%;
+		top: 45%;
+	}
+
+
 	.____images-wrapper {
 		width: 80%;
 		top: 50%;
