@@ -390,13 +390,13 @@ const Experience = () => {
 			<div className="containerExperience hackathons__container">
 				{isViewingOnPhone && (
 					<div className="hackathonTitle__container">
-						<img id="img3" className="" src={HackathonPicCropped} alt="Hackathon group picture"></img>
+						<img id="img3" className="" src={HackathonPicCropped} alt="Hackathon group"></img>
 						<h2 className="reveal fade-top">Hackathons:</h2>
 					</div>
 				)}
 				{!isViewingOnPhone && (
 					<div className="hackathonTitle__container">
-						<img id="img3" className="" src={HackathonPic} alt="Hackathon group picture"></img>
+						<img id="img3" className="" src={HackathonPic} alt="Hackathon group"></img>
 						<h2 className="reveal fade-top">Hackathons:</h2>
 					</div>
 
@@ -405,7 +405,7 @@ const Experience = () => {
 
 				<div className="hackathon__container hackathonLeft">
 					<div className="hackathonImg__container reveal fade-right ">
-						<img className="hackathonImg" src={GreatUniHack} alt="Great Uni Hack Picture"></img>
+						<img className="hackathonImg" src={GreatUniHack} alt="Great Uni Hack"></img>
 					</div>
 
 					<div className="hackathonContents__container reveal fade-left">
@@ -444,13 +444,13 @@ const Experience = () => {
 					</div>
 
 					<div className="hackathonImg__container reveal fade-left">
-						<img className="morganStanleyImg" src={MorganStanleyCoding} alt="Morgan Stanley image"></img>
+						<img className="morganStanleyImg" src={MorganStanleyCoding} alt="Morgan Stanley"></img>
 					</div>
 				</div>
 
 				<div className="hackathon__container hackathonLeft">
 					<div className="hackathonImg__container reveal fade-right">
-						<img className="hackathonImg" src={StudentHack} alt="Student hackathon Image"></img>
+						<img className="hackathonImg" src={StudentHack} alt="Student hackathon"></img>
 					</div>
 
 					<div className="hackathonContents__container reveal fade-left">
@@ -473,7 +473,7 @@ const Experience = () => {
 					</div>
 
 					<div className="hackathonImg__container reveal fade-left">
-						<img className="iXImage" src={IX} alt="iX Image"></img>
+						<img className="iXImage" src={IX} alt="iX"></img>
 					</div>
 				</div>
 			</div>

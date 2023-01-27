@@ -80,7 +80,7 @@ const Datachain = () => {
 			<div className="container project__container">
 				<div className="image-container">
 					<div className="monitor-container">
-						<img className="datachain-image" src={DatachainImg} alt="Datachain Image"></img>
+						<img className="datachain-image" src={DatachainImg} alt="Datachain"></img>
 						<img src={Monitor} alt="Monitor SVG"></img>
 					</div>
 					<div className="notebook-container">

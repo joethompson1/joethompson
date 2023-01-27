@@ -87,7 +87,7 @@ const Soulbounder = () => {
 					</div>
 					<div className="notebook-container">
 						<div className="blank-bg-sbt"></div>
-						<img className="soulbounderCreateSBT" src={SoulbounderCreateSBT} alt="Soulbounder Website Image"></img>
+						<img className="soulbounderCreateSBT" src={SoulbounderCreateSBT} alt="Soulbounder Website"></img>
 						<img src={Notebook} alt="Notebook SVG"></img>
 					</div>
 				</div>

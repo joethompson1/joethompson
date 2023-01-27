@@ -76,11 +76,11 @@ const PassTheTime = () => {
 					<div className="monitor-container-alt">
 						<div className="blank-bg-monitor"></div>
 						<img src={Monitor} alt="Monitor SVG"></img>
-						<img className="passTheTimeGooglePlayStore" src={PassTheTimeGooglePlayStore} alt="Pass the time Google Play Store Image"></img>
+						<img className="passTheTimeGooglePlayStore" src={PassTheTimeGooglePlayStore} alt="Pass the time Google Play Store"></img>
 					</div>
 					<div className="phone-container">
 						<div className="blank-bg-phone"></div>
-						<img className="passTheTime-Img" src={PassTheTimeImg} alt="Pass the time App image"></img>
+						<img className="passTheTime-Img" src={PassTheTimeImg} alt="Pass the time App"></img>
 						<img className="phone-img" src={Phone} alt="Phone SVG"></img>
 					</div>
 				</div>

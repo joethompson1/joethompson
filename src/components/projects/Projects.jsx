@@ -75,7 +75,7 @@ const Projects = () => {
 							</div>
 							{isHovering1 && (
 								<div className="img-container">
-									<img id="dataChain-img" className="datachain-image" src={DatachainImg} alt="Datachain Image"></img>
+									<img id="dataChain-img" className="datachain-image" src={DatachainImg} alt="Datachain"></img>
 									<img id="img1" src={Monitor} alt="Monitor SVG"></img>
 								</div>
 							)}
@@ -92,14 +92,14 @@ const Projects = () => {
 							{isHovering3 && (
 								<div className="img-container">
 									<div id="img3" className="blank-bg-phone"></div>
-									<img id="passTheTime-image" className="passTheTime-image" src={PassTheTimeImg} alt="Pass the time Image"></img>
+									<img id="passTheTime-image" className="passTheTime-image" src={PassTheTimeImg} alt="Pass the time"></img>
 									<img id="img3" className="phone-img" src={Phone} alt="Phone SVG"></img>
 								</div>
 							)}
 							{isHovering4 && (
 								<div className="img-container">
 									<div id="img4" className="color-bg-phone"></div>
-									<img id="img4" className="plantMedic-image" src={PlantMedicImg} alt="Plant Medic App Image"></img>
+									<img id="img4" className="plantMedic-image" src={PlantMedicImg} alt="Plant Medic App"></img>
 									<img id="img4" className="phone-img" src={Phone} alt="Phone SVG"></img>
 								</div>
 							)}
