@@ -1,0 +1,14 @@
+.loadingContainer {
+	width: 20%;
+	top: 35%;
+	left: 40%;
+	position: absolute;
+}
+
+.loadingContainer .logoContainer {
+	margin: auto;
+}
+
+.loadingTextContainer {
+	transform: translateY(-25vh);
+}

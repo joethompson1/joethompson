@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85523341.css",
+    "main.js": "/static/js/main.3be0a239.js",
+    "static/media/studentAccountPageWithDegree.png": "/static/media/studentAccountPageWithDegree.ee3ab26986af1ace5fc3.png",
+    "static/media/GUHwebpage.png": "/static/media/GUHwebpage.552578145fe16da688cc.png",
+    "static/media/homePage.png": "/static/media/homePage.2c954b73d3f43c98d8d6.png",
+    "static/media/passTheTimeGooglePlayStore.png": "/static/media/passTheTimeGooglePlayStore.7a2d2a86711063a1a85e.png",
+    "static/media/studentHackVII.png": "/static/media/studentHackVII.5668b91d4aa53bcf2275.png",
+    "static/media/hackathonPic.jpeg": "/static/media/hackathonPic.92fda79c105d605ad751.jpeg",
+    "static/media/soulbounderCreateSBT.png": "/static/media/soulbounderCreateSBT.c87d2edcbf7374c6ccda.png",
+    "static/media/paintSplatter.svg": "/static/media/paintSplatter.02ec6665f76c34b72bbc63fe9a956de5.svg",
+    "static/media/passTheTime.png": "/static/media/passTheTime.f3d549eb7460d978bc80.png",
+    "static/media/hackathonPicCropped.jpeg": "/static/media/hackathonPicCropped.3cd6b2b4aee4b873e4ba.jpeg",
+    "static/media/me-about.jpeg": "/static/media/me-about.423bf67c6322fe3dd7fa.jpeg",
+    "static/media/CV.pdf": "/static/media/CV.70c927988b72d53f19bb.pdf",
+    "static/media/bush_logocircle.png": "/static/media/bush_logocircle.416143e5145a4d0a465d.png",
+    "static/media/passTheTimeGameplay.png": "/static/media/passTheTimeGameplay.0c56dda507068732f9cc.png",
+    "static/media/morganStanleyCoding.png": "/static/media/morganStanleyCoding.e76088ed136602490719.png",
+    "static/media/welcome1.svg": "/static/media/welcome1.c432318ec576edfbdb62a11b9574e9d7.svg",
+    "static/media/projects.svg": "/static/media/projects.95898f488dcc52e5cd9c8d1e6a652b28.svg",
+    "static/media/IBM_iX.png": "/static/media/IBM_iX.ed5a6fe55cee1c962fbd.png",
+    "static/media/greatUniHack.png": "/static/media/greatUniHack.366914ca6922bb526922.png",
+    "static/media/contact.svg": "/static/media/contact.4be9625fa70f7db9c1ae5193674db7b6.svg",
+    "static/media/experienceVariant.svg": "/static/media/experienceVariant.917937a2b196572f8a43a8c0f3ef3481.svg",
+    "static/media/ibmLogo.svg": "/static/media/ibmLogo.04e75be9a18582363b63a5281ab57ecb.svg",
+    "static/media/monitor.svg": "/static/media/monitor.45d075f8faa9a9a79b500e179c3cd815.svg",
+    "static/media/notebook.svg": "/static/media/notebook.63bde64ae152b7e49d899d347a423e8e.svg",
+    "static/media/iphone.svg": "/static/media/iphone.21605e2a9784f6462ed51b0046210f9c.svg",
+    "index.html": "/index.html",
+    "main.85523341.css.map": "/static/css/main.85523341.css.map",
+    "main.3be0a239.js.map": "/static/js/main.3be0a239.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85523341.css",
+    "static/js/main.3be0a239.js"
+  ]
+}

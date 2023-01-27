@@ -1,0 +1,201 @@
+header {
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+.header__container {
+	position: relative;
+	height: 100vh;
+	grid-template-columns: 45% 50%;
+	display: grid;
+	gap: 5%;
+}
+
+
+.header__title-text {
+	position: relative;
+	padding: 0 0 0 2vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header__title h1 {
+	font-size: 3.5vw;
+}
+
+
+
+.header__title span {
+	font-size: 1.2vw;
+	margin-left: 0.2vw;
+}
+
+.header__title span b {
+	font-size: 1.8vw;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	color: var(--color-primary-variant);
+}
+
+
+/* -------------- CTA ---------------- */
+
+.cta {
+	margin-top: 2.5rem;
+	display: flex;
+	gap: 1.2rem;
+	justify-content: center;
+}
+
+
+
+/* -------------- Header Socials ---------------- */
+
+.header__socials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	position: absolute;
+	left: 0;
+	bottom: 3rem;
+}
+
+
+.header__socials::after {
+	content: '';
+	width: 1px;
+	height: 2rem;
+	background: var(--color-primary);
+}
+
+
+
+
+/* -------------- Header Image ---------------- */
+
+
+.header__img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 40vw;
+	padding: 3vw;
+}
+
+.me {
+	position: relative;
+	background: var(--color-primary);
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border-radius: 16vw 16vw 16vw 16vw;
+	overflow: hidden;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+.meImage {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------ Media Queries (Medium devices) -------------------- */
+
+@media screen and (max-width: 850px) {
+	.header__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 30% 45%;
+		gap: 1%;
+	}
+
+	.meImage {
+		width: 70%;
+	}
+
+	.me {
+		width: 100%;
+		height: 40vw;
+	}
+
+	.header__img {
+		position: relative;
+		height: 100%;
+	}
+
+	.header__title-text {
+		text-align: center;
+		top: 95%;
+	}
+
+	.header__title h1 {
+		font-size: 4.5vw;
+	}
+
+	.header__title span {
+		font-size: 2.2vw;
+	}
+
+	.header__title span b {
+		font-size: 2.8vw;
+	}
+}
+
+
+
+
+/* ------------------ Media Queries (Small devices) -------------------- */
+
+@media screen and (max-width: 600px) {
+
+	.header__container {
+		grid-template-rows: 32.5% 35%;
+	}
+
+
+	.meImage {
+		width: 70%;
+	}
+
+	.me {
+		width: 100%;
+		height: 40vw;
+	}
+
+	.header__title-text {
+		text-align: center;
+		top: 90%;
+	}
+
+	.header__title h1 {
+		font-size: 5.5vw;
+	}
+
+	.header__title span {
+		font-size: 3vw;
+	}
+
+	.header__title span b {
+		font-size: 3.4vw;
+	}
+}
+
+
+
+

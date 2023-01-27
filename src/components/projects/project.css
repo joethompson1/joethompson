@@ -1,0 +1,652 @@
+.project__container {
+	padding-top: 5vw;
+	position: relative;
+
+}
+
+.backButton__container {
+	position: fixed;
+	top: 0.8vw;
+	left: 0.8vw;
+	width: 5vw;
+	height: 5vw;
+}
+
+
+.backButton {
+	display: flex;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	color: var(--color-bg-variant);
+}
+
+
+
+
+
+
+
+/* ----------------- Project Images ----------------- */
+
+.image-container {
+	position: relative;
+	margin: 0 auto;
+	width: 30vw;
+	height: 30vw;
+/*	border-bottom: 5px solid black;*/
+}
+
+.monitor-container {
+	position: absolute;
+	width: 100%;
+	transform: translate(30%, -10%);
+}
+
+.monitor-container-alt {
+	position: absolute;
+	width: 120%;
+	transform: translate(0%, -15%);
+}
+
+
+
+.notebook-container {
+	position: absolute;
+	width: 110%;
+	transform: translate(-40%, 0%);
+}
+
+
+.phone-container {
+	position: absolute;
+	width: 70%;
+	transform: translate(-45%, 33%);
+}
+
+
+
+.datachain-image {
+	position: absolute;
+	z-index: -1;
+	top: 16.9%;
+}
+
+
+.studentAccountPageWithDegree-image {
+	position: absolute;
+	z-index: -1;
+	top: 23%;
+	left: 12%;
+	width: 76%;
+}
+
+
+
+.soulbounderCreateSBT {
+	position: absolute;
+	z-index: -1;
+	top: 24%;
+	left: 10%;
+	width: 82%;	
+}
+
+
+
+.passTheTimeGooglePlayStore {
+	position: absolute;
+	z-index: -1;
+	top: 18%;
+	left: 5%;
+	width: 92%;	
+}
+
+
+.GUHwebpage {
+	position: absolute;
+	z-index: -1;
+	top: 18%;
+	left: 2.5%;
+	width: 94.5%;	
+}
+
+
+.passTheTime-Img {
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: 40%;
+}
+
+
+.blank-bg {
+	position: absolute;
+	width: 82%;
+	height: 54%;
+	z-index: -2;
+	background: white;
+	top: 20%;
+	left: 9%;
+}
+
+
+.blank-bg-sbt {
+	position: absolute;
+	width: 82%;
+	height: 54%;
+	z-index: -2;
+	background: #fcfcfc;
+	top: 20%;
+	left: 9%;
+}
+
+
+.blank-bg-monitor {
+	position: absolute;
+	width: 94%;
+	height: 54%;
+	z-index: -2;
+	background: white;
+	top: 16.5%;
+	left: 3%;
+}
+
+
+.blank-bg-phone {
+	position: absolute;
+	width: 50%;
+	height: 85%;
+	z-index: -2;
+	background: #fafafa;
+	top: 7%;
+	left: 25%;
+}
+
+
+
+
+
+
+
+/* --------------- Project Title -------------------- */
+
+
+
+.project__title__container {
+	background: var(--color-primary);
+	border-radius: 1.5vw;
+	display: grid;
+	grid-template-columns: 50% 50% ;
+	gap: 0%;
+	padding: 1vw 0 1vw 0;
+}
+
+
+.project__title__container > div {
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.project__title__container h1 {
+	width: max-content;
+	font-size: 4.2vw;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* -------------- Project Buttons ---------------- */
+
+
+.title__buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.gitHub {
+	display: flex;
+	align-items: center;
+	border: 2px black solid;
+	border-radius: 1vw;
+	width: max-content;
+	height: max-content;
+	transition: var(--transition);
+	background: var(--color-bg-variant);
+}
+
+
+.gitHub:hover {
+	background: var(--color-bg-variant);
+	border-radius: 1.5vw;
+}
+
+
+.gitHub a:hover {
+	color: var(--color-primary-variant);
+}
+
+
+.gitHub a {
+	font-size: 1vw;
+	padding: 2vw 2vw 2vw 2vw;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------- Project contents ---------------- */
+
+.contents__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2vw;
+	padding: 2vw 0 6vw 0;
+}
+
+
+.contents__container > div {
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.contents__boxes {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
+}
+
+
+
+.contents__languages {
+	width: 100%;
+	background: var(--color-bg-variant);
+	padding: 2vw 4vw;
+	border-radius: 2vw;
+	border: 2px solid transparent;
+	transition: var(--transition);
+	margin-bottom: 1vw;
+}
+
+
+.contents__languages h3 {
+	color: white;
+	margin-bottom: 2vw;
+	font-size: 1.5vw;
+
+
+}
+
+
+.contents__languages h4 {
+	font-size: 1vw;
+	color: var(--color-primary-variant);
+}
+
+
+.technologies__details {
+	display: flex;
+	gap: 1vw;
+}
+
+
+.technologies__details-icon {
+/*	margin-top: 0.1vw;*/
+	color: var(--color-primary-variant);
+	width: 1vw;
+}
+
+
+
+.contents__description {
+	padding: 1vw;
+}
+
+
+.contents__description h3 {
+	margin-bottom: 1vw;
+	font-size: 1.5vw;
+	color: var(--color-primary-variant);
+}
+
+
+
+.contents__description p {
+	font-size: 1.1vw;
+}
+
+
+.technologies__languages {
+	width: 80%;
+}
+
+.progressBar2 {
+	border-radius: 2vw;
+	height: 1vw;
+	background-color: green;
+	width: 0;
+}
+
+
+.text-light {
+	font-size: 0.9vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Media Queries (Medium devices) -------------------- */
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.backButton__container {
+		top: 1.5vw;
+		left: 1.5vw;
+		width: 8vw;
+		height: 8vw;
+	}
+
+
+
+
+
+	/* ----------------- Project Images ----------------- */
+
+	.image-container {
+		width: 40vw;
+		height: 40vw;
+		margin-top: 5vw;
+	}
+
+	.monitor-container {
+		transform: translate(35%, -10%);
+	}
+
+
+	.notebook-container {
+		transform: translate(-30%, 0%);
+	}
+
+
+
+
+
+	/* -------------- Project Buttons ---------------- */
+
+	.gitHub {
+		margin: 0vw 4vw 0 0;
+	}
+
+
+	.gitHub a {
+		font-size: 1.6vw;
+		padding: 2vw 1.5vw 2vw 1.5vw;
+	}
+
+
+
+
+
+
+	/* ---------------- Project contents ---------------- */
+
+	.contents__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 45% 50%;
+		gap:5%;
+		padding-bottom: 15vw;
+	}
+
+
+	.contents__boxes {
+		gap: 5%;
+	}
+
+	.contents__languages {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+	}
+
+
+	.contents__languages h3 {
+		font-size: 1.7vw;
+	}
+
+
+	.contents__languages h4 {
+		font-size: 1.5vw;
+	}
+
+
+	.technologies__details {
+		gap: 1vw;
+	}
+
+
+	.technologies__details-icon {
+		width: 1.5vw;
+		font-size: 1.2vw;
+		transform: translateY(14%);
+	}
+
+
+	.contents__description {
+		height: 100%;
+		padding: 0vw 1vw 0 1vw;
+	}
+
+
+	.contents__description h3 {
+		margin-bottom: 1vw;
+		font-size: 2.2vw;
+		color: var(--color-primary-variant);
+	}
+
+
+
+	.contents__description p {
+		font-size: 1.6vw;
+	}
+
+
+	.progressBar2 {
+		border-radius: 2vw;
+		height: 1.5vw;
+		margin-bottom: 0.5vw;
+	}
+
+
+	.text-light {
+		font-size: 1.5vw;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Media Queries (Small devices) -------------------- */
+
+@media screen and (max-width: 600px) {
+
+	.backButton__container {
+		width: 10vw;
+		height: 10vw;
+	}
+
+
+
+
+
+	/* ----------------- Project Images ----------------- */
+
+	.image-container {
+		width: 42vw;
+		height: 42vw;
+	}
+
+
+
+
+	/* --------------- Project Title -------------------- */
+
+
+
+	.project__title__container {
+		padding: 2vw 0 2vw 0;
+	}
+
+
+	.project__title__container h1 {
+		font-size: 5vw;
+	}
+
+
+
+
+	/* -------------- Project Buttons ---------------- */
+
+
+	.title__buttons {
+		grid-template-columns: 38% 58%;
+		gap: 4%;
+	}
+
+	.gitHub {
+		margin: 0vw 0vw 0 0;
+	}
+
+
+	.gitHub a {
+			font-size: 2vw;
+			padding: 2vw 1vw 2vw 1vw;
+			color: white;
+	}
+
+
+
+
+
+
+	/* ---------------- Project contents ---------------- */
+
+	.contents__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap:5%;
+	}
+
+
+	.contents__boxes {
+		gap: 5%;
+	}
+
+	.contents__languages {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+	}
+
+
+	.contents__languages h3 {
+		font-size: 3.2vw;
+	}
+
+
+	.contents__languages h4 {
+		font-size: 2.6vw;
+	}
+
+
+	.technologies__details {
+		gap: 1.5vw;
+	}
+
+
+	.technologies__details-icon {
+		width: 2vw;
+		font-size: 2.5vw;
+		transform: translateY(5%);
+	}
+
+
+	.contents__description {
+		height: 100%;
+		padding: 0vw 1vw 0 1vw;
+	}
+
+
+	.contents__description h3 {
+		margin-bottom: 1.4vw;
+		margin-top: 1.4vw;
+		font-size: 3.5vw;
+	}
+
+
+
+	.contents__description p {
+		font-size: 2.8vw;
+	}
+
+
+	.experience__content article {
+		margin-bottom: 1.2vw;
+		margin-top: 1.2vw;
+	}
+
+
+	.text-light {
+		font-size: 2vw;
+	}
+
+}
+
+
+
+
