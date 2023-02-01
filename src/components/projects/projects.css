@@ -338,8 +338,8 @@ img {
 		grid-template-columns: 1fr;
 		grid-template-rows: 40% 60%;
 		gap: 0%;
-		height: 70%;
-		top: 40%;
+		height: 80%;
+		top: 50%;
 	}
 
 
