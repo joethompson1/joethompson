@@ -209,7 +209,7 @@ input, textarea {
 	.container.contact__container {
 		width: var(--container-width-md);
 		border-radius: 5vw;
-		top: 50%;
+		top: 45%;
 		height: 75%;
 	}
 
