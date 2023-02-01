@@ -205,6 +205,7 @@ input, textarea {
 		width: var(--container-width-md);
 		border-radius: 5vw;
 		top: 50%;
+		height: 75%;
 	}
 
 
@@ -229,18 +230,17 @@ input, textarea {
 		position: relative;
 		grid-template-columns: 1fr;
 /*		grid-template-rows: 40% 75%;*/
-		grid-template-rows: 1fr 2fr;
-		gap: 9%;
-/*		padding-top: 4vw;*/
-/*		padding-bottom: 25vw;*/
-/*		height: 75%;*/
+		grid-template-rows: 2fr 6fr;
+		gap: 5%;
+		height: 100%;
+		background: transparent;
 	}
 
 
 	.contact__options {
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, -40%);
 		width: 70%;
 		height: 80%;
 	}
@@ -261,8 +261,8 @@ input, textarea {
 		position: relative;
 /*		display: flex;*/
 		flex-direction: column;
+		height: 100%;
 		gap: 1.2rem;
-/*		padding-bottom: 5vw;*/
 	}
 
 
@@ -272,12 +272,16 @@ input, textarea {
 		border-radius: 1.5vw;
 		background: var(--color-bg);
 		resize: none;
-		font-size: 3.5vw;
+		font-size: 3.4vw;
 		color: var(--color-bg-variant);
 	}
 
+	textarea {
+		height: 25%;
+	}
+
 	.btn-primary {
-		font-size: 3.7vw;
+		font-size: 3.4vw;
 	}
 
 	.btn-primary:hover{
