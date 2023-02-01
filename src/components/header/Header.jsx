@@ -4,6 +4,17 @@ import Welcome from '../../assets/welcome1.svg';
 import Nav from '../nav/Nav';
 
 const Header = () => {
+
+	function resetHeight() {
+		document.body.style.height = window.innerHeight + "px";
+	}
+
+	// Rest the height whenever the window is resized
+	window.addEventListener("resize", resetHeight);
+
+	// Called to intially set the height.
+	resetHeight();
+
 	return (
 		<>
 			<header>
