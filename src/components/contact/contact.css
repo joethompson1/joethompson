@@ -201,6 +201,11 @@ input, textarea {
 /* ------------------ Media Queries (Small devices) -------------------- */
 
 @media screen and (max-width: 490px) {
+
+	section {
+		height: 87vh;
+	}
+
 	.container.contact__container {
 		width: var(--container-width-md);
 		border-radius: 5vw;
@@ -247,7 +252,7 @@ input, textarea {
 
 	.contactMeSVG {
 		transform: translate(-50%, -50%);
-		width: 74%;
+		width: 70%;
 	}
 
 
@@ -277,11 +282,11 @@ input, textarea {
 	}
 
 	textarea {
-		height: 25%;
+		height: 23%;
 	}
 
 	.btn-primary {
-		font-size: 3.4vw;
+		font-size: 3.2vw;
 	}
 
 	.btn-primary:hover{
