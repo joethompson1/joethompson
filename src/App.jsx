@@ -1,6 +1,6 @@
 import React from 'react';
+// import App from './App';
 import Header from './components/header/Header';
-// import Nav from './components/nav/Nav';
 import Projects from './components/projects/Projects';
 import Experience from './components/experience/Experience';
 import Contact from './components/contact/Contact';
@@ -8,7 +8,8 @@ import Datachain from './components/projects/Datachain';
 import Soulbounder from './components/projects/Soulbounder';
 import PassTheTime from './components/projects/PassTheTime';
 import PlantMedic from './components/projects/PlantMedic';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { browserHistory, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { browserHistory, Switch, Route, Router, Routes } from 'react-router';
 
 
 
@@ -17,7 +18,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
 	return (
 		<>
-			<Router>
+			<Router history="{browserHistory}">
+
 				<Routes>
 					<Route path="/" element={<Header />} />
 					<Route path="/projects" element={<Projects />} />
@@ -27,7 +29,7 @@ const App = () => {
 					<Route path="/soulbounder" element={<Soulbounder />} />
 					<Route path="/passTheTime" element={<PassTheTime />} />
 					<Route path="/plantMedic" element={<PlantMedic />} />
-				</Routes>
+				</Routes> 
 			</Router>
 		</>
 	)
