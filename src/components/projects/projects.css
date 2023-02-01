@@ -329,6 +329,11 @@ img {
 /* ------------------ Media Queries (Small devices) -------------------- */
 
 @media screen and (max-width: 600px) {
+
+	section {
+		height: 87vh;
+	}
+
 	.about__container {
 		grid-template-columns: 1fr;
 		grid-template-rows: 40% 60%;
