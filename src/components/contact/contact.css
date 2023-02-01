@@ -204,7 +204,7 @@ input, textarea {
 	.container.contact__container {
 		width: var(--container-width-md);
 		border-radius: 5vw;
-		top: 40%;
+		top: 50%;
 	}
 
 
@@ -221,17 +221,19 @@ input, textarea {
 	.container.contact__container h1 {
 		font-size: 8vw;
 		margin-top: 2vw;
+		margin-bottom: 3vw;
 	}
 
 
 	.container.contact__container__inner {
 		position: relative;
 		grid-template-columns: 1fr;
-		grid-template-rows: 40% 75%;
-		gap: 5%;
-		padding-top: 4vw;
-		padding-bottom: 25vw;
-/*		height: 100%;*/
+/*		grid-template-rows: 40% 75%;*/
+		grid-template-rows: 1fr 2fr;
+		gap: 9%;
+/*		padding-top: 4vw;*/
+/*		padding-bottom: 25vw;*/
+/*		height: 75%;*/
 	}
 
 
@@ -245,7 +247,7 @@ input, textarea {
 
 	.contactMeSVG {
 		transform: translate(-50%, -50%);
-		width: 80%;
+		width: 74%;
 	}
 
 
