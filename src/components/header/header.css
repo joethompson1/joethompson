@@ -164,6 +164,11 @@ header {
 
 @media screen and (max-width: 600px) {
 
+	header {
+		height: 90vh;
+/*		overflow: hidden;*/
+	}
+
 	.header__container {
 		grid-template-rows: 33% 66%;
 	}

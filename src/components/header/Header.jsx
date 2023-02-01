@@ -5,19 +5,9 @@ import Nav from '../nav/Nav';
 
 const Header = () => {
 
-	function resetHeight() {
-		document.body.style.height = window.innerHeight + "px";
-	}
-
-	// Rest the height whenever the window is resized
-	window.addEventListener("resize", resetHeight);
-
-	// Called to intially set the height.
-	resetHeight();
-
 	return (
 		<>
-			<body>
+			<header>
 				<div className="container header__container">
 					<div className="header__title">
 						<div className="header__title-text">
@@ -35,7 +25,7 @@ const Header = () => {
 
 
 				</div>
-			</body>
+			</header>
 			<Nav />
 		</>
 	)
