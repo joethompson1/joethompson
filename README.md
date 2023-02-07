@@ -21,7 +21,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Joe Thompson's Portfolio</h3>
+  <h3 align="center">My Portfolio</h3>
 
   <p align="center">
     A portfolio website created by, and showcasing the work of Joe Thompson.
@@ -70,7 +70,7 @@ into one website where my work can be easily found, viewed and potentially share
 Whats included in my portfolio website?
 * Projects page with a link to a detailed overview of each project along with images.
 * Experience page with an overview into who I've worked for, hackathons I've attended and languages I am familiar with. 
-* Contacts page so if anyone wanted to reach out to me they can :smile:
+* Contacts page so if anyone wanted to reach out to me they can.
 
 
 As I continue my computer science journey I will continously add to my portfolio in order for it to stay up to date.
@@ -123,7 +123,7 @@ Follow the steps below to set up and start the project locally:
    ```sh
    npm start
    ```
-5. Open the local website in your browser
+5. Open the website locally in your browser
    ```
    http://localhost:3000/
    ```
@@ -147,9 +147,12 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Joe Thompson  - joe.cl.thompson@gmail.com
+Joe Thompson  - 
+
+Email: joe.cl.thompson@gmail.com
 
 Github Link: [https://github.com/joethompson1/joethompson](https://github.com/joethompson1/joethompson)
+
 Project Link: [https://joethompson.co.uk](https://joethompson.co.uk)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
