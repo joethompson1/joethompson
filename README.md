@@ -10,7 +10,7 @@
     <img src="src/assets/JTLogo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">My Portfolio</h3>
+  <h3 align="center">Joe Thompson</h3>
 
   <p align="center">
     A portfolio website created by, and showcasing the work of Joe Thompson.
