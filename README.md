@@ -105,15 +105,15 @@ Follow the steps below to set up and start the project locally:
    ```sh
    git clone https://github.com/joethompson1/joethompson.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Start the React development server
+3. Start the React development server
    ```sh
    npm start
    ```
-5. Open the website locally in your browser
+4. Open the website locally in your browser
    ```
    http://localhost:3000/
    ```
