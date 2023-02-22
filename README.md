@@ -76,6 +76,7 @@ The technologies I used to build my portfolio are listed below:
 
 * [![React][React.js]][React-url]
 * [![JQuery][JQuery.com]][JQuery-url]
+* [![NPM][NPM]][NPM-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
