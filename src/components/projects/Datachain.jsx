@@ -109,10 +109,10 @@ const Datachain = () => {
 					<div className="contents__description">
 						<h3>Description:</h3>
 						<p>
-							The purpose of the application, was to create 
+							The purpose of the application was to create 
 							a prototype which highlights to universities that the adoption of blockchain technology is not 
-							only beneficial to their organisation, but, also to their past, present, and future students. 
-							This is because, creating a digital degree brings with it added utility to both students and 
+							only beneficial to their organisation, but also to their past, present, and future students. 
+							This is because creating a digital degree brings with it added utility to both students and 
 							employers, whilst at the same time helping to prevent qualification fraud.<br /><br />
 
 

@@ -108,11 +108,24 @@ const Soulbounder = () => {
 						<p>
 							This project is currently still under development. <br></br><br></br>
 
-							In 2022 Vitalik Buterin Co-authored a whitepaper called Decentralized Society: Finding Web3's Soul. Whereby he outlined his idea of introducing SoulBound Tokens (SBTs) to bring about a more decentralised society through the use of the blockchain. <br></br><br></br>
+							In 2022 Vitalik Buterin Co-authored a whitepaper called Decentralized Society: Finding Web3's Soul. 
+							Whereby he outlined his idea of introducing SoulBound Tokens (SBTs) to bring about a more decentralised society 
+							through the use of the blockchain. 
+							This is achieved through the use of a one time transfer token known as an SBT.<br></br><br></br>
 
-							Working with this idea I am currently developing a website that would allow people to create and issue their own Soulbound tokens. These SBTs can come in a variety of different forms such as, proof of attendance, certificates and general ID's. This builds upon the work I did for my Datachain project, this time creating a more general purpose certificate which will be hosted on the Ethereum blockchain and using the cutting edge Soulbound Token smart contract, which the Ethereum Foundation are currently developing.<br /><br />
+							Working with this idea I am currently developing a website that would allow people to create and 
+							issue their own SBTs. These can come in a variety of different forms such as, 
+							proof of attendance, certificates and general ID's. 
+							This builds upon the work I did for my Datachain project, this time creating a more general 
+							purpose certificate which will be hosted on the Ethereum blockchain and utilising the cutting edge 
+							Soulbound Token smart contract, which is currently being developed by the Ethereum Foundation.<br /><br />
 
-							This project is being built using Node.js whilst making use of various different libraries such as IPFS, Ether.js, web3.js and many more to allow for the interaction between the user and the Ethereum network.
+							The premise of the project is to leverage blockchain technology as a way of improving 
+							the efficiency of every day life. One of the ways we are already seeing this is with the increase 
+							in utility of digital wallets. Soulbounder strives at providing an easy way of creating and sharing SBT's 
+							by bridging the gap between blockchain technology and the every day user. This will open up a whole world of
+							potential possibilities for users wanting to add more functionality to digital wallets. 
+							
 						</p>
 					</div>
 

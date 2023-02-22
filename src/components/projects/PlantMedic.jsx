@@ -104,9 +104,15 @@ const PassTheTime = () => {
 					<div className="contents__description">
 						<h3>Description:</h3>
 						<p>
-							This app was developed by a team of 4 including myself over the course of a 24 hour period for the Great Uni Hack19. As a team we worked together through the night to develop this proof of concept application. <br></br><br></br>
+							This app was developed by a team of 4 including myself over the course of 
+							a 24 hour period for the Great Uni Hack19. 
+							As a team we worked together through the night to develop this proof of concept application. <br></br><br></br>
 
-							We Made use of a Machine learning api, in order to classify different plants through the use of the camera. Users are able to create an account and log in. Makes use of the google maps plug in to find the users location and add new plants on to the map. Each plant that the user adds, stores how often it needs watering along with keeping track of the amount of co2 the plant has absorbed. <br></br>
+							We Made use of a Machine learning api to classify different plants that the user has photographed themselves. 
+							Users are able to create an account and log in and would save the details of all the plants they are caring for. 
+							Makes use of the google maps plug in to find the users location and add new plants on to the map. 
+							Each plant that the user adds, stores how often it needs watering along with keeping track of 
+							the amount of co2 the plant has absorbed. <br></br>
 						</p>
 					</div>
 

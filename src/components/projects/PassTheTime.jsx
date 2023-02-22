@@ -104,11 +104,11 @@ const PassTheTime = () => {
 					<div className="contents__description">
 						<h3>Description:</h3>
 						<p>
-							This application was developed during covid as a fun little exercise for me to practice my mobile development experience whilst at the same time being able to release an app onto the Google Play Store. This is because from a young age I have always wanted to release an app to the app store which is playable by anyone around the world. <br></br> <br></br>
+							This application was developed during covid as a fun little exercise for me to practice my mobile development experience, whilst at the same time being able to release an app onto the Google Play Store. This is because from a young age I have always wanted to release an app to the app store which is available to everyone (who has an android) around the world. <br></br> <br></br>
 
-							The premise of the game is very simple, the timer counts down from 10 and the user has to try and stop the timer on excatly 0 seconds. If they are successful then they will receive a small trophy at the top of the screen indicating how many times they have achieved this feat. <br></br><br></br>
+							The premise of the game is very simple, the timer counts down from 10 and the user has to try and stop the timer on excatly 0.0 seconds. If they are successful then they will receive a small trophy at the top of the screen indicating how many times they have achieved this feat. <br></br><br></br>
 
-							The app was developed in Android Studio using the programming languages Java and XML.
+							The app was developed in Android Studio using the programming languages Java and XML, and is sadly only available on the Google Play Store.
 						</p>
 					</div>
 
