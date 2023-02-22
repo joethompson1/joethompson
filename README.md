@@ -51,7 +51,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://joethompson.co.uk)
+[![Homepage][product-screenshot]](https://joethompson.co.uk)
 
 After years of building projects with friends and on my own I thought it was a good time to start collating them
 into one website where my work can be easily found, viewed and potentially shared.
@@ -72,7 +72,7 @@ Anyone wishing to clone and use the project may do so at their own discretion, a
 
 ### Built With
 
-The technologies I used to built my portfolio are listed below:
+The technologies I used to build my portfolio are listed below:
 
 * [![React][React.js]][React-url]
 * [![JQuery][JQuery.com]][JQuery-url]
@@ -152,6 +152,8 @@ Project Link: [https://joethompson.co.uk](https://joethompson.co.uk)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: src/assets/screenshotHomepage.png
+[NPM]: https://img.shields.io/badge/NPM-d90166?style=for-the-badge&logo=npm&logoColor=white
+[NPM-url]: https://www.npmjs.com/
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
