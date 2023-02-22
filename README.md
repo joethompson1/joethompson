@@ -17,8 +17,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="">
+    <img src="src/assets/JTLogo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">My Portfolio</h3>
@@ -104,7 +104,7 @@ If you don't have npm installed then copy and past the line below into terminal.
 
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install -g npm
   ```
 
 ### Installation
@@ -147,7 +147,7 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Joe Thompson  - 
+Joe Thompson 
 
 Email: joe.cl.thompson@gmail.com
 
