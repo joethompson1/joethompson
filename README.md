@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="src/assets/JTLogo.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/JTLogo.png" alt="Logo" width="180" height="180">
   </a>
 
   <h3 align="center">Joe Thompson</h3>
