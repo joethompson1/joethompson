@@ -9,17 +9,12 @@ import Soulbounder from './components/projects/Soulbounder';
 import PassTheTime from './components/projects/PassTheTime';
 import PlantMedic from './components/projects/PlantMedic';
 import { browserHistory, BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { browserHistory, Switch, Route, Router, Routes } from 'react-router';
-
-
-
 
 
 const App = () => {
 	return (
 		<>
 			<Router history="{browserHistory}">
-
 				<Routes>
 					<Route path="/" element={<Header />} />
 					<Route path="/projects" element={<Projects />} />

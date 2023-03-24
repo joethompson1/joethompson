@@ -38,21 +38,11 @@ const Header = () => {
 
 
 					<div className="header__img">
-
-{/*						<svg>
-						  <defs>
-						    <filter id="filter">
-						      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-						      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
-						      <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-						    </filter>
-						  </defs>
-						</svg>*/}
 						<div className='me'>
-							<div class="wrapper">
-							  <div class="ball"></div>
-							  <div class="ball"></div>
-							  <div class="ball"></div>
+							<div className="wrapper">
+							  <div className="ball"></div>
+							  <div className="ball"></div>
+							  <div className="ball"></div>
 							</div>
 							<img className="meImage" src={Welcome} alt="Home" />
 						</div>
