@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css';
+import './header.scss';
 import Welcome from '../../assets/welcome1.svg';
 import Github from '../../assets/github.svg';
 import Resume from '../../assets/resume.svg';
@@ -38,7 +38,22 @@ const Header = () => {
 
 
 					<div className="header__img">
+
+{/*						<svg>
+						  <defs>
+						    <filter id="filter">
+						      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+						      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+						      <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+						    </filter>
+						  </defs>
+						</svg>*/}
 						<div className='me'>
+							<div class="wrapper">
+							  <div class="ball"></div>
+							  <div class="ball"></div>
+							  <div class="ball"></div>
+							</div>
 							<img className="meImage" src={Welcome} alt="Home" />
 						</div>
 					</div>
