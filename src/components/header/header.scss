@@ -1,8 +1,51 @@
 header {
 	height: 100%;
 	overflow: hidden;
+	background: var(--color-bg);
 }
 
+header.dark {
+	background-color: var(--color-bg-dark);
+
+	h1, span {
+		color: var(--color-text-dark);
+	}
+
+	.ball:before {
+    // background: var(--color-primary-variant);
+    // background: grey;
+  }
+
+  .spaceBackground {
+		display: block;
+	}
+}
+
+
+.darkBackground {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.spaceBackground {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(25%,-46%);
+	width: 75%;
+	z-index: 0;
+}
+
+.spaceBits {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-80%,-140%);
+	z-index: 0;
+	width: 75%;
+}
 
 .header__container {
 	position: relative;
@@ -24,7 +67,6 @@ header {
 .header__title h1 {
 	font-size: 3.5vw;
 }
-
 
 
 .header__title span {
@@ -113,6 +155,35 @@ header {
 
 
 
+.theme-text {
+	position: absolute;
+	left: 22%;
+	top: 44%;
+	width: 20%;
+	padding: 0.5vw 0;
+	text-align: center;
+	border-radius: .25vw;
+	font-size: 1vw;
+	color: black;
+	letter-spacing: 0.05vw;
+	// background: var(--color-primary-variant);
+}
+
+
+.theme-toggle-button {
+	position: absolute;
+	left: 23%;
+	top: 49%;
+	width: 18%;
+	padding: 0.5vw 0;
+	text-align: center;
+	border-radius: .25vw;
+	cursor: pointer;
+	font-size: 1vw;
+	color: white;
+	letter-spacing: 0.05vw;
+	background: var(--color-primary-variant);
+}
 
 
 
@@ -126,12 +197,13 @@ header {
 
 
 
-$radius: 34.5vw;
+
+$radius: 35vw;
 
 .wrapper {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 51%;
   filter: url('#filter');
 }
 
@@ -187,7 +259,7 @@ $radius: 34.5vw;
 
 @keyframes y-axis {
   0% { transform: translateY($radius*0.001); }
-  100% { transform: translateY(-$radius*0.05) scale(.8); background: var(--color-primary);}
+  100% { transform: translateY(-$radius*0.05) scale(.8);}
 }
 
 
@@ -198,7 +270,7 @@ $radius: 34.5vw;
 
 @keyframes y-axis-lateral {
   0% { transform: translateY($radius*0.001); }
-  100% { transform: translateY(-$radius*0.1); background: var(--color-primary);}
+  100% { transform: translateY(-$radius*0.1);}
 }
 
 
@@ -237,9 +309,13 @@ $radius: 34.5vw;
 /* ------------------ Media Queries (Medium devices) -------------------- */
 
 @media screen and (max-width: 850px) {
+
 	.header__container {
+		flex-direction: column-reverse;
+		display: flex;
 		grid-template-columns: 1fr;
-		grid-template-rows: 30% 45%;
+		// transform: translate(0, -50%);
+		// grid-template-rows: 30% 45%;
 		gap: 1%;
 	}
 
@@ -264,7 +340,7 @@ $radius: 34.5vw;
 	}
 
 	.me {
-		position: absolute;
+		position: relative;
 		top: 5%;
 		left: 50%;
 		transform: translate(-50%, 0);
@@ -274,14 +350,26 @@ $radius: 34.5vw;
 	}
 
 	.header__img {
-		position: relative;
-		margin-top: 15%;
-		height: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -110%);
+		// margin-top: 15%;
+		// height: 100%;
+	}
+
+
+	.header__title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 110%);
 	}
 
 	.header__title-text {
 		text-align: center;
-		top: 95%;
+		top: 0%;
 	}
 
 	.header__title h1 {
@@ -311,6 +399,35 @@ $radius: 34.5vw;
 		width: 45%;
 		transform: translate(-50%, 0);
 	}
+
+	.theme-text {
+		left: 30%;
+		top: 43%;
+		font-size: 1.3vw;
+	}
+
+
+	.theme-toggle-button {
+		left: 35%;
+		top: 49%;
+		width: 10%;
+		font-size: 1.3vw;
+	}
+
+	.spaceBackground {
+		top: 50%;
+		left: 50%;
+		transform: translate(15%,-70%);
+		width: 80%;
+	}
+
+	.spaceBits {
+		top: 50%;
+		left: 50%;
+		transform: translate(-80%,-175%);
+		width: 75%;
+	}
+
 }
 
 
@@ -321,12 +438,20 @@ $radius: 34.5vw;
 @media screen and (max-width: 600px) {
 
 	header {
-		height: 87vh;
-/*		overflow: hidden;*/
+		height: 100vh;
 	}
 
 	.header__container {
-		grid-template-rows: 33% 66%;
+		// grid-template-rows: 33% 66%;
+	}
+
+	.header__img {
+		transform: translate(-50%, -130%);
+	}
+
+
+	.header__title {
+		transform: translate(-50%, 130%);
 	}
 
 
@@ -364,7 +489,29 @@ $radius: 34.5vw;
 	  height: $radius;
 	  top: calc(50% - #{$radius/2});
 	  left: calc(50% - #{$radius/2});
-	 }
+	}
+
+	.theme-text {
+		left: 27%;
+		top: 42%;
+		font-size: 1.8vw;
+	}
+
+
+	.theme-toggle-button {
+		left: 31%;
+		top: 49%;
+		width: 12%;
+		font-size: 1.5vw;
+	}
+
+	.spaceBackground {
+		transform: translate(15%,-90%);
+	}
+
+	.spaceBits {
+		transform: translate(-80%,-200%);
+	}
 
 }
 

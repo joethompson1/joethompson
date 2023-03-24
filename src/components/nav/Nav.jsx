@@ -1,5 +1,5 @@
-import React from 'react';
-import './nav.css';
+import React, { useState } from 'react';
+import './nav.scss';
 import {AiOutlineHome} from 'react-icons/ai';
 import {AiOutlineUser} from 'react-icons/ai';
 import {BiBook} from 'react-icons/bi';
@@ -12,7 +12,7 @@ const Nav = () => {
 	const navigate = useNavigate();
 
 	return (
-		<nav>
+		<nav className="">
 			<a onClick={() => navigate("/")} className={window.location.pathname === '/' ? 'active' : ''}><AiOutlineHome /></a>
 			<a onClick={() => navigate("/projects")} className={window.location.pathname === '/projects' ? 'active' : ''} ><BiBook /></a>
 			<a onClick={() => navigate("/experience")} className={window.location.pathname === '/experience' ? 'active' : ''} ><AiOutlineUser /></a>
