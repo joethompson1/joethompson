@@ -438,7 +438,8 @@ $radius: 35vw;
 @media screen and (max-width: 600px) {
 
 	header {
-		height: 87vh;
+		// height: 87vh;
+		height: 100vh
 	}
 
 	.header__container {

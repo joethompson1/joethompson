@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './projects.css';
+import './projects.scss';
 import Nav from '../nav/Nav';
 import Notebook from '../../assets/notebook.svg';
 import Monitor from '../../assets/monitor.svg';
@@ -15,6 +15,17 @@ import { useNavigate } from "react-router-dom";
 const Projects = () => {
 
 	const navigate = useNavigate();
+
+
+	const getTheme = () => {
+	    const localStorageTheme = localStorage.getItem('default-theme');
+
+    	return (String(localStorageTheme) === "dark");
+	};
+
+	const [isDark, setIsDark] = useState(getTheme());
+
+	console.log(isDark);
 
 	const [isHovering1, setIsHovering1] = useState(false);
 	const [isHovering2, setIsHovering2] = useState(false);
@@ -64,7 +75,7 @@ const Projects = () => {
 
 	return (
 		<>
-			<section id="about">
+			<section id="about" className={isDark === true ? "dark" : ""}>
 
 				<div className="container about__container">
 					<div id="about__images" className="about__images">
@@ -74,13 +85,14 @@ const Projects = () => {
 								<img className="about__images-stock" src={myProjects}></img>
 							</div>
 							{isHovering1 && (
-								<div className="img-container">
+								<div className="img-container" id="desktopContainer">
 									<img id="dataChain-img" className="datachain-image" src={DatachainImg} alt="Datachain"></img>
+									<div id="blank-bg" className="blank-bg-desktop"></div>
 									<img id="img1" src={Monitor} alt="Monitor SVG"></img>
 								</div>
 							)}
 							{isHovering2 && (
-								<div className="img-container">
+								<div className="img-container" id="notebookContainer">
 									<img id="img2" className="notebook-img" src={Notebook} alt="Notebook SVG"></img>
 									<div id="blank-bg" className="blank-bg"></div>
 									<div id="soulbounderAnimation" className="loadingContainer">

@@ -80,6 +80,7 @@ const Datachain = () => {
 			<div className="container project__container">
 				<div className="image-container">
 					<div className="monitor-container">
+						<div id="blank-bg" className="blank-bg-desktop"></div>
 						<img className="datachain-image" src={DatachainImg} alt="Datachain"></img>
 						<img src={Monitor} alt="Monitor SVG"></img>
 					</div>
@@ -109,21 +110,22 @@ const Datachain = () => {
 					<div className="contents__description">
 						<h3>Description:</h3>
 						<p>
-							The purpose of the application was to create 
-							a prototype which highlights to universities that the adoption of blockchain technology is not 
-							only beneficial to their organisation, but also to their past, present, and future students. 
-							This is because creating a digital degree brings with it added utility to both students and 
-							employers, whilst at the same time helping to prevent qualification fraud.<br /><br />
+							This prototype application was created to try and highlight to universities 
+							that the adoption of blockchain technology is not only beneficial to their organisation, 
+							but also to their past, present, and future students. This is because creating a digital 
+							degree brings with it added utility to both students and employers, whilst at the same 
+							time helping to prevent against the falsifying of degree qualifications.<br /><br />
 
 
-							Datachain makes use of a variety of languages and technologies in order to achieve this. By leveraging
-							the HyperLedger Fabric permissioned blockchain network to deploy custom smart contracts 
-							written using the programming language Go, I was able to create an immutable record of transactions specifically
-							for the distribution and viewing of digital degrees.<br /><br />
+							Datachain makes use of a variety of languages and technologies in order to achieve this. 
+							By leveraging the HyperLedger Fabric permissioned blockchain network to deploy custom 
+							smart contracts written using the programming language Go, I was able to create an 
+							immutable record of transactions specifically for the distribution and viewing of digital 
+							degrees.<br /><br />
 
-							Using Node.Js I created a website in order to allow users to interact with the HyperLedger Fabric
-							blockchain network. This was done via API calls to the smart contract, allowing users to award, view and 
-							share university degrees.
+							Using Node.Js, I created a website allowing users to interact with the 
+							HyperLedger Fabric blockchain network. This was done via API calls to the smart contract, 
+							allowing users to award, view and share university degrees.
 						</p>
 					</div>
 

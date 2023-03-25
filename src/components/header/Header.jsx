@@ -14,7 +14,6 @@ import Nav from '../nav/Nav';
 const Header = () => {
 
 	const getTheme = () => {
-		// localStorage.setItem('default-theme', 'dark');
 	    const localStorageTheme = localStorage.getItem('default-theme');
 
     	return (String(localStorageTheme) === "dark");

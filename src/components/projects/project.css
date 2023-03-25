@@ -119,16 +119,6 @@
 }
 
 
-.blank-bg {
-	position: absolute;
-	width: 82%;
-	height: 54%;
-	z-index: -2;
-	background: white;
-	top: 20%;
-	left: 9%;
-}
-
 
 .blank-bg-sbt {
 	position: absolute;
@@ -152,7 +142,7 @@
 }
 
 
-.blank-bg-phone {
+/*.blank-bg-phone {
 	position: absolute;
 	width: 50%;
 	height: 85%;
@@ -160,7 +150,7 @@
 	background: #fafafa;
 	top: 7%;
 	left: 25%;
-}
+}*/
 
 
 
