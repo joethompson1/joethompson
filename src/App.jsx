@@ -12,6 +12,25 @@ import { browserHistory, BrowserRouter as Router, Routes, Route } from "react-ro
 
 
 const App = () => {
+
+	function changeBackground(color) {
+	   document.body.style.background = color;
+	}
+
+
+
+	const getTheme = () => {
+	    const localStorageTheme = localStorage.getItem('default-theme');
+
+    	return (String(localStorageTheme) === "dark");
+	};
+
+
+	if (getTheme()) {
+		// window.addEventListener("load",function() { changeBackground('var(--color-bg-dark)') });
+	}
+
+
 	return (
 		<>
 			<Router history="{browserHistory}">
