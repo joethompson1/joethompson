@@ -27,7 +27,9 @@ const App = () => {
 
 
 	if (getTheme()) {
-		// window.addEventListener("load",function() { changeBackground('var(--color-bg-dark)') });
+		window.addEventListener("load",function() { changeBackground('var(--color-bg-dark)') });
+	} else {
+		window.addEventListener("load",function() { changeBackground('var(--color-bg)') });
 	}
 
 

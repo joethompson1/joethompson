@@ -1,5 +1,5 @@
 import React, {useState, useEffect}from 'react';
-import './experience.css';
+import './experience.scss';
 import Nav from '../nav/Nav';
 import {BsPatchCheckFill} from 'react-icons/bs';
 import {AiOutlineTeam} from 'react-icons/ai';
@@ -20,6 +20,26 @@ import IX from '../../assets/IBM_iX.png';
 
 
 const Experience = () => {
+
+	const getTheme = () => {
+	    const localStorageTheme = localStorage.getItem('default-theme');
+
+    	return (String(localStorageTheme) === "dark");
+	};
+
+	const [isDark, setIsDark] = useState(getTheme());
+
+	const setIsDarkFunction = () => {
+		if (isDark) {
+			setIsDark(false);
+			localStorage.setItem('default-theme', 'light');
+			document.body.style.background = 'var(--color-bg)';
+		} else {
+			setIsDark(true);
+			localStorage.setItem('default-theme', 'dark');
+			document.body.style.background = 'var(--color-bg-dark)';
+		}
+	};
 
 	const [isIBMHovering1, setIsIBMHovering1] = useState(false);
 	const [isIBMHovering2, setIsIBMHovering2] = useState(false);
@@ -139,7 +159,7 @@ const Experience = () => {
 	    var python = document.getElementById("python");
 	    var c = document.getElementById("c");
 	    var solidity = document.getElementById("solidity");
-	    var go = document.getElementById("go");
+	    var java = document.getElementById("java");
 	    var width = 1;
 	    var id = setInterval(frame, 30);
 
@@ -158,7 +178,7 @@ const Experience = () => {
 	        python.style.width = width + "%";
 	        c.style.width = (width/2) + "%";
 	        solidity.style.width = (width/100 * 25) + "%";
-	        go.style.width = (width/100 * 12.5) + "%";
+	        java.style.width = (width/100 * 65) + "%";
 	      }
 	    }
 	  }
@@ -229,7 +249,7 @@ const Experience = () => {
 
 
 	return (
-		<section id="experience" className="experience__section">
+		<section id="experience" className={isDark === true ? "dark experience__section" : "experience__section"}>
 			<div className="containerExperience experience__title__container">
 				<div className="titleImg">
 					<img className="experienceSVG" src={ExperienceSVG} alt="Experience SVG"></img>
@@ -248,7 +268,7 @@ const Experience = () => {
 							<span>IBM iX Mobile <b> (Sept 2020 - Sept 2021)</b></span>
 						</div>
 						<div>
-							<h4>Business Consultant & Operations Intern</h4>
+							<h4>Software Engineer & Operations Intern</h4>
 						</div>
 					</div>
 				)}
@@ -566,9 +586,9 @@ const Experience = () => {
 							<article className="experience__details">
 								<BsPatchCheckFill className="experience__details-icon"/>
 								<div className="experience__details__content">
-									<h4>Go</h4>
-									<div id="go" className="progressBar"></div>
-									<small className="text-light-experience">~1 Year</small>
+									<h4>Java</h4>
+									<div id="java" className="progressBar"></div>
+									<small className="text-light-experience">~5 Years</small>
 								</div>
 							</article>
 						</div>

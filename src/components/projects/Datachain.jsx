@@ -1,5 +1,5 @@
-import React from 'react';
-import './project.css'
+import React, {useState}  from 'react';
+import './project.scss'
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa'
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,14 @@ import {ImGoogleDrive} from 'react-icons/im';
 
 const Datachain = () => { 
 	const navigate = useNavigate();
+
+	const getTheme = () => {
+	    const localStorageTheme = localStorage.getItem('default-theme');
+
+    	return (String(localStorageTheme) === "dark");
+	};
+
+	const [isDark, setIsDark] = useState(getTheme());
 
 	let run = false;
 	function reveal() {
@@ -72,7 +80,7 @@ const Datachain = () => {
 
 	return (
 
-		<section className="projects">
+		<section className="projects" className={isDark === true ? "dark" : ""}>
 			<div className="backButton__container">
 				<a onClick={() => navigate(-1)} className="backButton"><IoArrowBackCircleOutline className="backButton"/></a>
 			</div>

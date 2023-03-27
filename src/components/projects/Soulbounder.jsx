@@ -1,5 +1,5 @@
-import React from 'react';
-import './project.css'
+import React, {useState}  from 'react';
+import './project.scss';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa'
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,14 @@ import {BsPatchCheckFill} from 'react-icons/bs';
 const Soulbounder = () => { 
 	const navigate = useNavigate();
 
+
+	const getTheme = () => {
+	    const localStorageTheme = localStorage.getItem('default-theme');
+
+    	return (String(localStorageTheme) === "dark");
+	};
+
+	const [isDark, setIsDark] = useState(getTheme());
 
 
 	let run = false;
@@ -71,7 +79,7 @@ const Soulbounder = () => {
 
 	return (
 
-		<section>
+		<section className={isDark === true ? "dark" : ""}>
 			<div className="backButton__container">
 				<a onClick={() => navigate(-1)} className="backButton"><IoArrowBackCircleOutline className="backButton"/></a>
 			</div>
@@ -106,7 +114,7 @@ const Soulbounder = () => {
 					<div className="contents__description">
 						<h3>Description:</h3>
 						<p>
-							This project is currently still under development. <br></br><br></br>
+							<i>This project is currently under development.</i> <br></br><br></br>
 
 							In 2022 Vitalik Buterin Co-authored a whitepaper called Decentralized Society: Finding Web3's Soul. 
 							Whereby he outlined his idea of introducing SoulBound Tokens (SBTs) to bring about a more decentralised society 

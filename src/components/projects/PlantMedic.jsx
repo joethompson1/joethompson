@@ -1,5 +1,5 @@
-import React from 'react';
-import './project.css'
+import React, { useState } from 'react';
+import './project.scss'
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa';
 import {FaHackerrank} from 'react-icons/fa';
@@ -13,6 +13,15 @@ import {BsPatchCheckFill} from 'react-icons/bs';
 
 const PassTheTime = () => { 
 	const navigate = useNavigate();
+
+
+	const getTheme = () => {
+	    const localStorageTheme = localStorage.getItem('default-theme');
+
+    	return (String(localStorageTheme) === "dark");
+	};
+
+	const [isDark, setIsDark] = useState(getTheme());
 
 
 	let run = false;
@@ -66,7 +75,7 @@ const PassTheTime = () => {
 
 	return (
 
-		<section>
+		<section className={isDark === true ? "dark" : ""}>
 			<div className="backButton__container">
 				<a onClick={() => navigate(-1)} className="backButton"><IoArrowBackCircleOutline className="backButton"/></a>
 			</div>
@@ -79,7 +88,7 @@ const PassTheTime = () => {
 						<img className="GUHwebpage" src={GUHwebpage} alt="GUH webpage"></img>
 					</div>
 					<div className="phone-container">
-						<div id="img4" className="color-bg-phone"></div>
+						<div id="plantMedicPhoneBackground" className="color-bg-phone"></div>
 						<img id="img4" className="plantMedic-image" src={PlantMedicImg} alt="Plant medic app"></img>
 						<img id="img4" className="phone-img" src={Phone} alt="Phone SVG"></img>
 					</div>

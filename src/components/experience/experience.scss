@@ -1,3 +1,27 @@
+section.dark {
+	.IBMRoles__box {
+		background: var(--color-text-dark);
+	}
+
+	.IBMRoles__box:hover {
+		color: var(--color-primary-variant);
+		transform: scale(1.02);
+	}
+
+	.hackathonTitle__container h2 {
+		color: var(--color-text-dark);
+	}
+
+	.IBMDescription__container {
+		color: var(--color-text-dark);
+		letter-spacing: 0.05vw;
+		border-color: var(--color-primary-variant);
+	}
+}
+
+
+
+
 .experience__section {
 	padding-top: 5vw;
 }

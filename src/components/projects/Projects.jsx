@@ -17,6 +17,7 @@ const Projects = () => {
 	const navigate = useNavigate();
 
 
+
 	const getTheme = () => {
 	    const localStorageTheme = localStorage.getItem('default-theme');
 
@@ -24,6 +25,20 @@ const Projects = () => {
 	};
 
 	const [isDark, setIsDark] = useState(getTheme());
+
+
+	const setIsDarkFunction = () => {
+		if (isDark) {
+			setIsDark(false);
+			localStorage.setItem('default-theme', 'light');
+			document.body.style.background = 'var(--color-bg)';
+		} else {
+			setIsDark(true);
+			localStorage.setItem('default-theme', 'dark');
+			document.body.style.background = 'var(--color-bg-dark)';
+		}
+	};
+
 
 	console.log(isDark);
 
@@ -80,9 +95,12 @@ const Projects = () => {
 				<div className="container about__container">
 					<div id="about__images" className="about__images">
 						<div className="____images-wrapper">
-							<div id="img" className="img-container">
+							<div id="img" className="img-container" onClick={setIsDarkFunction}>
 								<div className="about__images-bg"></div>
 								<img className="about__images-stock" src={myProjects}></img>
+								<div className="about__themes-switch">
+									<div className="about__themes-switchInner"></div>
+								</div>
 							</div>
 							{isHovering1 && (
 								<div className="img-container" id="desktopContainer">
