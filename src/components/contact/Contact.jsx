@@ -2,37 +2,23 @@ import React, { useState, useRef }  from 'react';
 import './contact.scss';
 import Nav from '../nav/Nav';
 import emailjs from 'emailjs-com';
-import ContactMe from '../../assets/contact.svg';
-import $ from 'jquery';
 
 const Contact = () => {
-	const [messageSuccess, setMessageSuccess] = useState(false);
-	const [messageFailure, setMessageFailure] = useState(false);
+	// const [messageSuccess, setMessageSuccess] = useState(false);
+	// const [messageFailure, setMessageFailure] = useState(false);
 
-	const form = useRef();
+	const userName = useRef();
+	const email = useRef();
+	const message = useRef();
 
-	const sendEmail = (e) => {
-		e.preventDefault();
+	const sendEmail = () => {
+		var contactParams = {
+			name: userName.current.value,
+			email: email.current.value,
+			message: message.current.value
+		};
 
-		emailjs.sendForm('service_a8fz1mh', 'template_w7cgqyv', form.current, '4yV4yBnctTu9dPiEm')
-			.then((result) => {
-				e.target.reset();
-				setMessageSuccess(true);
-				setTimeout(function() {
-				$("#alert__container").fadeOut(200, function() {
-				    	setMessageSuccess(false);
-				    });
-				}, 3000)
-			}, (error) => {
-				console.log(error.text);
-				e.target.reset();
-				setMessageFailure(true);
-				setTimeout(function() {
-				$("#alert__container").fadeOut(200, function() {
-				    	setMessageFailure(false);
-				    });
-				}, 3000)
-			});
+		emailjs.send('service_a8fz1mh', 'template_w7cgqyv', contactParams, '4yV4yBnctTu9dPiEm').then(function (res) {});
 	};
 
 	return (
@@ -44,11 +30,9 @@ const Contact = () => {
 						<div className="letter">
 							<div className="letter-border"></div>
 							<div className="letter-contents">
-								<form ref={form} onSubmit={sendEmail}>
-									<input type="text" name="name" placeholder="Your Full Name" id="userName" required />
-									<input type="email" name="email" placeholder="Your Email" required />
-									<textarea name="message" rows="7" placeholder="Your Message" required ></textarea>
-								</form>
+								<input type="text" name="name" placeholder="Your Full Name" id="userName" ref={userName} required />
+								<input type="email" name="email" placeholder="Your Email" id="email" ref={email} required />
+								<textarea name="message" rows="7" placeholder="Your Message" id="message" ref={message} required ></textarea>
 							</div>
 						</div>
 						<div className="top-fold"></div>
@@ -57,7 +41,7 @@ const Contact = () => {
 					</div>
 					<div className="shadow"></div>
 					<div className="animated-mail">
-						<button type="submit" className="sendMsgButton">SEND</button>
+						<button type="submit" className="sendMsgButton" onClick={sendEmail}>SEND</button>
 					</div>
 				</div>
 			</div>
