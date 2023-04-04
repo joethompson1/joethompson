@@ -51,12 +51,14 @@ const Contact = () => {
 								</form>
 							</div>
 						</div>
-						<div class="top-fold"></div>
-						<div class="body"></div>
-						<div class="left-fold"></div>
+						<div className="top-fold"></div>
+						<div className="body"></div>
+						<div className="left-fold"></div>
 					</div>
-					<div class="shadow"></div>
-					<button type="submit" className="sendMsgButton">SEND</button>
+					<div className="shadow"></div>
+					<div className="animated-mail">
+						<button type="submit" className="sendMsgButton">SEND</button>
+					</div>
 				</div>
 			</div>
 			<Nav />

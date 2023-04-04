@@ -191,11 +191,13 @@ body {
 
 .sendMsgButton {
 	position: absolute;
-	// top: calc(50%);
-	// left: calc(50% - 3vw);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 0%);
+	// bottom: calc((50% - (6vw)));
+	// left: calc((50% - (3vw)));
+	top: 0%;
+	left: calc((50% - (3vw)));
+	-webkit-transform: translate(0%, -260%);
+	-moz-transform: translate(0%, -260%);
+	transform: translate(0%, -260%);
 	opacity: 0;
 	border-radius: 100%;
 	width: 6vw;
@@ -204,11 +206,9 @@ body {
 	text-align: center;
 	color: white;
 	font-size: 1.6vw;
-	// transition: all 0.3s;
 }
 
 .sendMsgButton:hover {
-	// transform: scale(1.1);
 	cursor: pointer;
 }
 
@@ -243,10 +243,13 @@ body {
 	}
 
 	.sendMsgButton {
-		transition: all 1.5s;
+		// transition: all 1.5s;
 		opacity: 1;
 	}
 }
+
+
+
 
 
 
