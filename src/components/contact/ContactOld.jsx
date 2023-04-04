@@ -1,5 +1,5 @@
 import React, { useState, useRef }  from 'react';
-import './contact.scss';
+import './contact.css';
 import Nav from '../nav/Nav';
 import emailjs from 'emailjs-com';
 import ContactMe from '../../assets/contact.svg';
@@ -37,26 +37,32 @@ const Contact = () => {
 
 	return (
 		<section id="contact">
-			<div className="contactContainer ">
-				<div className="letter-image">
-					<div className="animated-mail">
-						<div className="back-fold"></div>
-						<div className="letter">
-							<div className="letter-border"></div>
-							<div className="letter-contents">
-								<form ref={form} onSubmit={sendEmail}>
-									<input type="text" name="name" placeholder="Your Full Name" id="userName" required />
-									<input type="email" name="email" placeholder="Your Email" required />
-									<textarea name="message" rows="7" placeholder="Your Message" required ></textarea>
-								</form>
-							</div>
-						</div>
-						<div class="top-fold"></div>
-						<div class="body"></div>
-						<div class="left-fold"></div>
+			<div className="container contact__container">
+				{messageSuccess && (
+					<div id="alert__container" className="alert__container alert__success__container">
+						<h2>Email sent successfully!</h2>
 					</div>
-					<div class="shadow"></div>
-					<button type="submit" className="sendMsgButton">SEND</button>
+				)}
+
+				{messageFailure && (
+					<div id="alert__container" className="alert__container alert__failure__container">
+						<h2>Email sent unsuccessfully!</h2>
+					</div>
+				)}
+		
+				<h1>Contact Me</h1>
+				<div className="container contact__container__inner">
+					<div className="contact__options">
+						<img className="contactMeSVG" src={ContactMe} alt="Contact Me SVG"></img>
+					</div>
+
+					<form ref={form} onSubmit={sendEmail}>
+						<input type="text" name="name" placeholder="Your Full Name" required />
+						<input type="email" name="email" placeholder="Your Email" required />
+						<input type="text" name="subject" placeholder="Subject of Message" required />
+						<textarea name="message" rows="7" placeholder="Your Message" required ></textarea>
+						<button type="submit" className="btn btn-primary">Send Message</button>
+					</form>
 				</div>
 			</div>
 			<Nav />
