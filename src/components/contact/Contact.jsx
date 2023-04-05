@@ -39,7 +39,7 @@ const Contact = () => {
 						<div className="body"></div>
 						<div className="left-fold"></div>
 					</div>
-					<div className="shadow"></div>
+						<div className="shadow"></div>
 					<div className="animated-mail">
 						<button type="submit" className="sendMsgButton" onClick={sendEmail}>SEND</button>
 					</div>
