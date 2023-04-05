@@ -40,7 +40,7 @@ const Contact = () => {
 						<div className="left-fold"></div>
 					</div>
 						<div className="shadow"></div>
-					<div className="animated-mail">
+					<div className="animated-send">
 						<button type="submit" className="sendMsgButton" onClick={sendEmail}>SEND</button>
 					</div>
 				</div>
