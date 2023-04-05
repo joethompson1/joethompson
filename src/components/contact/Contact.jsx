@@ -12,20 +12,8 @@ const Contact = () => {
     	return (String(localStorageTheme) === "dark");
 	};
 
-	const [isDark, setIsDark] = useState(getTheme());
+	const [isDark] = useState(getTheme());
 
-	const setIsDarkFunction = () => {
-		if (isDark) {
-			setIsDark(false);
-			localStorage.setItem('default-theme', 'light');
-			document.body.style.background = 'var(--color-bg)';
-		} else {
-			setIsDark(true);
-			localStorage.setItem('default-theme', 'dark');
-			document.body.style.background = 'var(--color-bg-dark)';
-		}
-	};
-	
 	const [messageSuccess, setMessageSuccess] = useState(false);
 	const [messageFailure, setMessageFailure] = useState(false);
 
