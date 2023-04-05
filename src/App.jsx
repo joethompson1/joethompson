@@ -9,6 +9,7 @@ import Soulbounder from './components/projects/Soulbounder';
 import PassTheTime from './components/projects/PassTheTime';
 import PlantMedic from './components/projects/PlantMedic';
 import { browserHistory, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 
 const App = () => {
@@ -35,6 +36,13 @@ const App = () => {
 
 	return (
 		<>
+			<Helmet>
+                <meta charSet="utf-8" />
+                <title>Joe Thompson's Portfolio Website</title>
+                <meta name="description" content="A protfolio website showcasing the most noteworthy projects by Joe Thompson" />
+                <link rel="canonical" href="https://joethompson.co.uk" />
+            </Helmet>
+
 			<Router history="{browserHistory}">
 				<Routes>
 					<Route path="/" element={<Header />} />
