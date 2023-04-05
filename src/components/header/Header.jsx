@@ -74,7 +74,7 @@ const Header = () => {
 
 
 					<div className="header__img">
-						<div className='me'>
+						<div className="me">
 							<div className="wrapper">
 							  <div className="ball"></div>
 							  <div className="ball"></div>

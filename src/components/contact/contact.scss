@@ -1,5 +1,7 @@
 
-
+// section {
+// 	max-width: 1500px;
+// }
 
 
 .contactContainer {
@@ -30,7 +32,7 @@
 
 .animated-mail {
 	position: relative;
-	height: calc(50% + 12vw);
+	height: calc(50% + 15vw);
 	width: 100%;
 	-webkit-transition: .4s;
 	-moz-transition: .4s;
@@ -171,7 +173,7 @@
 
 .shadow {
 	position: absolute;
-	top: calc((50% + (1vw)));
+	top: calc((50% + (3vw)));
 	left: 50%;
 	width: 80vw;
 	height: 8vw;
@@ -253,7 +255,26 @@
 
 
 
+/* ------------------ Media Queries (Large devices) -------------------- */
+
+@media screen and (max-width: 1700px) {
+
+	.animated-mail {
+		height: calc(50% + 12vw);
+	}
+
+
+	.shadow {
+		top: calc((50% + (1vw)));
+	}
+
+}
+
+
+
+
 /* ------------------ Media Queries (Medium devices) -------------------- */
+
 
 @media screen and (max-width: 850px) {
 
