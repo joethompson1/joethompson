@@ -1,4 +1,8 @@
-
+section.dark {
+	.alert__container {
+		color: var(--color-text-dark);
+	}
+}
 
 .contactContainer {
 	position: relative;
@@ -12,6 +16,36 @@
 	width: 50%;
 	height: 50%;
 }
+
+
+
+.noHover {
+	pointer-events: none;
+}
+
+.alert__container {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	border-radius: 2vw 2vw 2vw 2vw;
+	z-index: 1;
+	font-size: 1.5vw;
+	padding: 2vw 1vw;
+	text-align: center;
+	color: var(--color-bg-dark);
+}
+
+.alert__success__container {
+	background: transparent;
+}
+
+.alert__failure__container {
+	background: red;
+}
+
+
 
 .letter-image {
 	position: relative;
@@ -248,8 +282,26 @@
 }
 
 
+.sendMailAnimation {
+	animation: sendMail 6s ease;
+}
 
 
+
+@keyframes sendMail {
+  0% { transform: translate(-50%, 0); }
+  99% { transform: translate(-50%, -2000px); }
+  100% { 
+	}
+}
+
+
+
+
+
+.placeholderRed::-webkit-input-placeholder {
+   color: red;
+}
 
 
 
