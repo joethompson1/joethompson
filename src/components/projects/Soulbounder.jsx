@@ -105,8 +105,13 @@ const Soulbounder = () => {
 						<h1>Soulbounder</h1>
 					</div>
 
-					<div className="gitHub">
-						<a href="https://www.github.com/joethompson1/Soulbounder" target="_blank" rel="noreferrer">Github <FaGithub /></a>
+					<div className="title__button">
+						<div className="gitHub" href="https://github.com/joethompson1/Soulbounder" target="_blank">
+							<a>Github </a>
+							<div className="githubIcon">
+								<FaGithub />
+							</div>
+						</div>
 					</div>
 				</div>
 

@@ -1,5 +1,4 @@
 section.dark {
-	// background-color: var(--color-bg-dark);
 
 	.project__title__container {
 		background: var(--color-primary-variant);
@@ -183,18 +182,6 @@ section.dark {
 }
 
 
-/*.blank-bg-phone {
-	position: absolute;
-	width: 50%;
-	height: 85%;
-	z-index: -2;
-	background: #fafafa;
-	top: 7%;
-	left: 25%;
-}*/
-
-
-
 
 
 
@@ -241,12 +228,14 @@ section.dark {
 .title__buttons {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	cursor: pointer;
 }
 
 
 .gitHub {
 	display: flex;
 	align-items: center;
+	text-align: center;
 	border: 2px black solid;
 	border-radius: 1vw;
 	width: max-content;
@@ -276,7 +265,22 @@ section.dark {
 	box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.3);
 }
 
+.reactIcon {
+	position: relative;
+	right: 7%;
+	margin-top: 0.1vw;
+	color: white;
+	font-size: 1.5vw
+}
 
+
+.githubIcon {
+	position: relative;
+	right: 15%;
+	margin-top: 0.1vw;
+	color: white;
+	font-size: 1.5vw;
+}
 
 
 
@@ -364,8 +368,8 @@ section.dark {
 
 
 .contents__description p {
-	font-size: 1.1vw;
-	letter-spacing: 0.04vw;
+	font-size: 1.05vw;
+	// letter-spacing: 0.01vw;
 }
 
 
@@ -378,6 +382,7 @@ section.dark {
 	height: 1vw;
 	background-color: green;
 	width: 0;
+	margin-bottom: 0.5vw;
 }
 
 
@@ -454,6 +459,14 @@ section.dark {
 		padding: 2vw 1.5vw 2vw 1.5vw;
 	}
 
+	.githubIcon {
+		right: 10%;
+	}
+
+	.FaHackerrank {
+		right: 4% !important;
+	}
+
 
 
 
@@ -462,6 +475,7 @@ section.dark {
 	/* ---------------- Project contents ---------------- */
 
 	.contents__container {
+		margin-top: 2vw;
 		grid-template-columns: 1fr;
 		grid-template-rows: 45% 50%;
 		gap:5%;
@@ -581,7 +595,7 @@ section.dark {
 
 
 	.project__title__container h1 {
-		font-size: 5vw;
+		font-size: 4.7vw;
 	}
 
 
@@ -591,19 +605,42 @@ section.dark {
 
 
 	.title__buttons {
-		grid-template-columns: 38% 58%;
-		gap: 4%;
+		grid-template-columns: none;
+		gap: 5%;
+		display: flex;
+		width: 90%;
+	}
+
+	.title__button {
+		display: flex;
+		width: 40%;
 	}
 
 	.gitHub {
+		flex: 1;
+		height: 100%;
 		margin: 0vw 0vw 0 0;
 	}
 
 
 	.gitHub a {
+			width: 100%;
 			font-size: 2vw;
 			padding: 2vw 1vw 2vw 1vw;
 			color: white;
+	}
+
+	.reactIcon {
+		font-size: 2.5vw;
+	}
+
+	.githubIcon {
+		right: 10%;
+		font-size: 2.5vw;
+	}
+
+	.FaHackerrank {
+		right: 3% !important;
 	}
 
 

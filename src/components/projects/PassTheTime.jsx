@@ -99,14 +99,22 @@ const PassTheTime = () => {
 						<h1>Pass the Time</h1>
 					</div>
 
+
 					<div className="title__buttons">
-						<div className="gitHub">
-							<a href="https://github.com/joethompson1/PassTheTime" target="_blank" rel="noreferrer">Github <FaGithub /></a>
+						<div className="gitHub" href="https://github.com/joethompson1/Datachain" target="_blank">
+							<a>Github </a>
+							<div className="githubIcon">
+								<FaGithub />
+							</div>
 						</div>
-						<div className="gitHub">
-							<a href="https://play.google.com/store/apps/details?id=com.justjoe.zer0" target="_blank" rel="noreferrer">Google Play <FaGooglePlay /></a>
+						<div className="gitHub" href="https://play.google.com/store/apps/details?id=com.justjoe.zer0" target="_blank">
+							<a>Google Play </a>
+							<div className="reactIcon">
+								<FaGooglePlay />
+							</div>
 						</div>
 					</div>
+
 				</div>
 
 				<div className="contents__container">
