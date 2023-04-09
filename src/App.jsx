@@ -37,7 +37,7 @@ const App = () => {
 	return (
 		<>
 			<Helmet>
-                <meta charSet="utf-8" content="width=device-width, user-scalable=no"/>
+                <meta charSet="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1"/>
                 <title>Joe Thompson's Portfolio Website</title>
                 <meta name="description" content="A protfolio website showcasing the most noteworthy projects by Joe Thompson" />
                 <link rel="canonical" href="https://joethompson.co.uk" />
