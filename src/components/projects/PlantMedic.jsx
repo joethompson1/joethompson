@@ -100,14 +100,14 @@ const PassTheTime = () => {
 					</div>
 
 					<div className="title__buttons">
-						<div className="gitHub" href="https://github.com/joethompson1/PlantMedic" target="_blank">
-							<a>Github </a>
+						<div className="gitHub">
+							<a href="https://github.com/joethompson1/PlantMedic" target="_blank">Github </a>
 							<div className="githubIcon">
 								<FaGithub />
 							</div>
 						</div>
-						<div className="gitHub" href="https://greatunihack19.devpost.com/project-gallery" target="_blank">
-							<a>Hackathon Webpage </a>
+						<div className="gitHub">
+							<a href="https://greatunihack19.devpost.com/project-gallery" target="_blank">Hackathon Webpage </a>
 							<div className="reactIcon FaHackerrank">
 								<FaHackerrank />
 							</div>

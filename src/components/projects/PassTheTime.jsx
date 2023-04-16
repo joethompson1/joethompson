@@ -101,14 +101,14 @@ const PassTheTime = () => {
 
 
 					<div className="title__buttons">
-						<div className="gitHub" href="https://github.com/joethompson1/Datachain" target="_blank">
-							<a>Github </a>
+						<div className="gitHub">
+							<a href="https://github.com/joethompson1/PassTheTime" target="_blank">Github </a>
 							<div className="githubIcon">
 								<FaGithub />
 							</div>
 						</div>
-						<div className="gitHub" href="https://play.google.com/store/apps/details?id=com.justjoe.zer0" target="_blank">
-							<a>Google Play </a>
+						<div className="gitHub">
+							<a href="https://play.google.com/store/apps/details?id=com.justjoe.zer0" target="_blank">Google Play </a>
 							<div className="reactIcon">
 								<FaGooglePlay />
 							</div>

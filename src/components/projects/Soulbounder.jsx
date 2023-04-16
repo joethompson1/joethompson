@@ -106,8 +106,8 @@ const Soulbounder = () => {
 					</div>
 
 					<div className="title__button">
-						<div className="gitHub" href="https://github.com/joethompson1/Soulbounder" target="_blank">
-							<a>Github </a>
+						<div className="gitHub">
+							<a href="https://github.com/joethompson1/Soulbounder" target="_blank">Github </a>
 							<div className="githubIcon">
 								<FaGithub />
 							</div>

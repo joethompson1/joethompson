@@ -105,14 +105,14 @@ const Datachain = () => {
 					</div>
 
 					<div className="title__buttons">
-						<div className="gitHub" href="https://github.com/joethompson1/Datachain" target="_blank">
-							<a>Github </a>
+						<div className="gitHub">
+							<a href="https://github.com/joethompson1/Datachain" target="_blank">Github </a>
 							<div className="githubIcon">
 								<FaGithub />
 							</div>
 						</div>
-						<div className="gitHub" href="https://drive.google.com/file/d/1ZvBKH6Ezdz7gkq5NJTThPwjUGQTCqliJ/view?usp=sharing" target="_blank">
-							<a>Project Report </a>
+						<div className="gitHub">
+							<a href="https://drive.google.com/file/d/1ZvBKH6Ezdz7gkq5NJTThPwjUGQTCqliJ/view?usp=sharing" target="_blank">Project Report </a>
 							<div className="reactIcon">
 								<ImGoogleDrive />
 							</div>
