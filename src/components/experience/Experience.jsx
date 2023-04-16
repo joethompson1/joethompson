@@ -268,7 +268,7 @@ const Experience = () => {
 							<span>IBM iX Mobile <b> (Sept 2020 - Sept 2021)</b></span>
 						</div>
 						<div>
-							<h4>Software Engineer & Business Consu Intern</h4>
+							<h4>Software Engineer & Business Consultant Intern</h4>
 						</div>
 					</div>
 				)}
