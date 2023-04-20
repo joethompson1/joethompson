@@ -397,7 +397,271 @@ section.dark {
 
 
 
+/* ------------------ Media Queries (Large devices) -------------------- */
 
+@media screen and (max-width: 1700px) {
+
+	.project__container {
+		padding-top: 5vw;
+
+	}
+
+	.backButton__container {
+		top: 0.8vw;
+		left: 0.8vw;
+		width: 5vw;
+		height: 5vw;
+	}
+
+
+	.backButton {
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+
+
+
+
+	/* ----------------- Project Images ----------------- */
+
+	.image-container {
+		width: 30vw;
+		height: 30vw;
+	}
+
+	.monitor-container {
+		width: 100%;
+		transform: translate(30%, -10%);
+	}
+
+	.monitor-container-alt {
+		width: 120%;
+		transform: translate(0%, -15%);
+	}
+
+
+
+	.notebook-container {
+		width: 110%;
+		transform: translate(-40%, 0%);
+	}
+
+
+	.phone-container {
+		width: 70%;
+		transform: translate(-45%, 33%);
+	}
+
+
+
+	.datachain-image {
+		top: 16.9%;
+	}
+
+
+	.studentAccountPageWithDegree-image {
+		top: 23%;
+		left: 12%;
+		width: 76%;
+	}
+
+
+
+	.soulbounderCreateSBT {
+		top: 24%;
+		left: 10%;
+		width: 82%;	
+	}
+
+
+
+	.passTheTimeGooglePlayStore {
+		top: 18%;
+		left: 5%;
+		width: 92%;	
+	}
+
+
+	.GUHwebpage {
+		top: 18%;
+		left: 2.5%;
+		width: 94.5%;	
+	}
+
+
+	.passTheTime-Img {
+		top: 20%;
+		left: 30%;
+		width: 40%;
+	}
+
+
+
+	.blank-bg-sbt {
+		width: 82%;
+		height: 54%;
+		top: 20%;
+		left: 9%;
+	}
+
+
+	.blank-bg-monitor {
+		width: 94%;
+		height: 54%;
+		top: 16.5%;
+		left: 3%;
+	}
+
+
+
+
+
+
+	/* --------------- Project Title -------------------- */
+
+
+
+	.project__title__container {
+		border-radius: 1.5vw;
+		grid-template-columns: 50% 50% ;
+		gap: 0%;
+		padding: 1vw 0 1vw 0;
+	}
+
+
+
+	.project__title__container h1 {
+		font-size: 4.2vw;
+		top: 50%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+
+
+
+
+
+
+	/* -------------- Project Buttons ---------------- */
+
+
+	.title__buttons {
+		grid-template-columns: 1fr 1fr;
+	}
+
+
+	.gitHub:hover {
+		border-radius: 1.5vw;
+		transform: scale(1.05);
+	}
+
+
+
+	.gitHub a {
+		font-size: 1vw;
+		padding: 2vw 2vw 2vw 2vw;
+	}
+
+	.reactIcon {
+		right: 7%;
+		margin-top: 0.1vw;
+		font-size: 1.5vw
+	}
+
+
+	.githubIcon {
+		right: 15%;
+		margin-top: 0.1vw;
+		font-size: 1.5vw;
+	}
+
+
+
+
+
+
+
+
+	/* ---------------- Project contents ---------------- */
+
+	.contents__container {
+		gap: 2vw;
+		padding: 2vw 0 6vw 0;
+	}
+
+
+	.contents__languages {
+		width: 100%;
+		padding: 2vw 4vw 3vw 4vw;
+		border-radius: 2vw;
+		margin-bottom: 2.5vw;
+		box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.3);
+	}
+
+
+	.contents__languages h3 {
+		margin-bottom: 2vw;
+		font-size: 1.5vw;
+
+
+	}
+
+
+	.contents__languages h4 {
+		font-size: 1vw;
+	}
+
+
+	.technologies__details {
+		gap: 1vw;
+	}
+
+
+	.technologies__details-icon {
+		width: 1vw;
+	}
+
+
+
+	.contents__description {
+		padding: 1vw;
+	}
+
+
+	.contents__description h3 {
+		margin-bottom: 1vw;
+		font-size: 1.5vw;
+		letter-spacing: 0.1vw;
+	}
+
+
+
+	.contents__description p {
+		font-size: 1.05vw;
+	}
+
+
+	.technologies__languages {
+		width: 80%;
+	}
+
+	.progressBar2 {
+		border-radius: 2vw;
+		height: 1vw;
+		margin-bottom: 0.5vw;
+	}
+
+
+	.text-light {
+		font-size: 0.9vw;
+	}
+
+
+
+}
 
 
 
