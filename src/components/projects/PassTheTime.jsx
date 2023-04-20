@@ -88,7 +88,7 @@ const PassTheTime = () => {
 						<img className="passTheTimeGooglePlayStore" src={PassTheTimeGooglePlayStore} alt="Pass the time Google Play Store"></img>
 					</div>
 					<div className="phone-container">
-						<div className="blank-bg-phone"></div>
+						<div className="blank-bg-phone-project"></div>
 						<img className="passTheTime-Img" src={PassTheTimeImg} alt="Pass the time App"></img>
 						<img className="phone-img" src={Phone} alt="Phone SVG"></img>
 					</div>

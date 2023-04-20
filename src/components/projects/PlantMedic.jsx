@@ -88,7 +88,7 @@ const PassTheTime = () => {
 						<img className="GUHwebpage" src={GUHwebpage} alt="GUH webpage"></img>
 					</div>
 					<div className="phone-container">
-						<div id="plantMedicPhoneBackground" className="color-bg-phone"></div>
+						<div id="plantMedicPhoneBackground" className="color-bg-phone-project"></div>
 						<img id="img4" className="plantMedic-image" src={PlantMedicImg} alt="Plant medic app"></img>
 						<img id="img4" className="phone-img" src={Phone} alt="Phone SVG"></img>
 					</div>

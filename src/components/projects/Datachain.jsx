@@ -88,12 +88,12 @@ const Datachain = () => {
 			<div className="container project__container">
 				<div className="image-container">
 					<div className="monitor-container">
-						<div id="blank-bg" className="blank-bg-desktop"></div>
-						<img className="datachain-image" src={DatachainImg} alt="Datachain"></img>
+						<div id="blank-bg" className="blank-bg-monitor"></div>
+						<img className="datachain-image-project" src={DatachainImg} alt="Datachain"></img>
 						<img src={Monitor} alt="Monitor SVG"></img>
 					</div>
 					<div className="notebook-container">
-						<div className="blank-bg"></div>
+						<div className="blank-bg-project"></div>
 						<img className="studentAccountPageWithDegree-image" src={StudentAccountPageWithDegree} alt="Student Account Page with Degree"></img>
 						<img src={Notebook} alt="Notebook SVG"></img>
 					</div>
