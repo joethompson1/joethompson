@@ -195,21 +195,23 @@ section.dark {
 
 .blank-bg-phone-project {
 	position: absolute;
-	background: white;
-	width: 50%;
-	height: 82%;
-	top: 8%;
-	left: 25%;
+	background: #fafafa;
+	width: 45%;
+	height: 89.5%;
+	top: 2.5%;
+	left: 27%;
+	border-radius: 1vw;
 }
 
 
 .color-bg-phone-project {
 	position: absolute;
 	background: var(--color-primary-variant);
-	width: 48%;
-	height: 83%;
-	top: 8%;
-	left: 26%;
+	width: 45%;
+	height: 89.5%;
+	top: 2.5%;
+	left: 27%;
+	border-radius: 1vw;
 }
 
 
@@ -446,7 +448,6 @@ section.dark {
 		width: 30vw;
 		height: 30vw;
 	}
-
 
 
 

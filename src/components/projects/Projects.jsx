@@ -3,7 +3,7 @@ import './projects.scss';
 import Nav from '../nav/Nav';
 import Notebook from '../../assets/notebook.svg';
 import Monitor from '../../assets/monitor.svg';
-import Phone from '../../assets/iphone.svg';
+import Phone from '../../assets/iphone.png';
 import SoulbounderAnimation from './SoulbounderAnimation';
 import PassTheTimeImg from '../../assets/passTheTimeGameplay.png';
 import myProjects from '../../assets/projects.svg';

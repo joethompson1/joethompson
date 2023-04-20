@@ -4,7 +4,7 @@ import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa';
 import {FaGooglePlay} from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
-import Phone from '../../assets/iphone.svg';
+import Phone from '../../assets/iphone.png';
 import Monitor from '../../assets/monitor.svg';
 import PassTheTimeGooglePlayStore from '../../assets/passTheTimeGooglePlayStore.png';
 import PassTheTimeImg from '../../assets/passTheTimeGameplay.png';

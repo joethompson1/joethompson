@@ -129,22 +129,24 @@ section.dark {
 
 .blank-bg-phone {
 	position: absolute;
-	width: 40%;
-	height: 65%;
+	width: 36%;
+	height: 72%;
 	z-index: -2;
 	background: #fafafa;
-	top: 17%;
-	left: 30%;
+	top: 12%;
+	left: 32%;
+	border-radius: 1vw;
 }
 
 .color-bg-phone {
 	position: absolute;
-	width: 40%;
-	height: 65%;
+	width: 36%;
+	height: 72%;
 	z-index: -2;
 	background: var(--color-primary-variant);
-	top: 17%;
-	left: 30%;
+	top: 12%;
+	left: 32%;
+	border-radius: 1vw;
 }
 
 
@@ -219,15 +221,16 @@ img {
 
 .phone-img {
 	position: relative;
+	width: 60%;
 	top: 0;
-	left: 0;
+	left: 20.5%;
 }
 
 .passTheTime-image {
 	position: absolute;
 	top: 24%;
-	left: 32.5%;
-	width: 35%;
+	left: 35%;
+	width: 30%;
 }
 
 
@@ -378,7 +381,7 @@ img {
 		z-index: -1;
 		left: 5%;
 		width: 90%;
-		margin-top: 2%;
+		top: 20%
 	}
 
 
@@ -397,31 +400,31 @@ img {
 
 
 	.blank-bg-phone {
-		width: 50%;
-		height: 84%;
-		top: 8%;
-		left: 25%;
+		width: 45%;
+		height: 89%;
+		top: 3%;
+		left: 27%;
 	}
 
 	.color-bg-phone {
-		width: 48%;
-		height: 83%;
-		top: 8%;
-		left: 26%;
+		width: 45%;
+		height: 89%;
+		top: 3%;
+		left: 27%;
 	}
 
 
 	.passTheTime-image {
 		top: 20%;
-		left: 30%;
-		width: 40%;
+		left: 32.8%;
+		width: 35%;
 	}
 
 
 	.plantMedic-image {
 		top: 30%;
-		left: 32.5%;
-		width: 35%;
+		left: 35%;
+		width: 30%;
 	}
 
 

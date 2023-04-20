@@ -4,7 +4,7 @@ import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa';
 import {FaHackerrank} from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
-import Phone from '../../assets/iphone.svg';
+import Phone from '../../assets/iphone.png';
 import Monitor from '../../assets/monitor.svg';
 import GUHwebpage from '../../assets/GUHwebpage.png';
 import PlantMedicImg from '../../assets/bush_logocircle.png';
