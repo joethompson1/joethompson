@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './projects.scss';
 import Nav from '../nav/Nav';
-import Notebook from '../../assets/notebook.svg';
-import Monitor from '../../assets/monitor.svg';
+import Notebook from '../../assets/notebook.png';
+import Monitor from '../../assets/monitor.png';
 import Phone from '../../assets/iphone.png';
 import SoulbounderAnimation from './SoulbounderAnimation';
 import PassTheTimeImg from '../../assets/passTheTimeGameplay.png';
@@ -106,7 +106,7 @@ const Projects = () => {
 								<div className="img-container" id="desktopContainer">
 									<img id="dataChain-img" className="datachain-image" src={DatachainImg} alt="Datachain"></img>
 									<div id="blank-bg" className="blank-bg-desktop"></div>
-									<img id="img1" src={Monitor} alt="Monitor SVG"></img>
+									<img id="img1" class="desktop-img" src={Monitor} alt="Monitor SVG"></img>
 								</div>
 							)}
 							{isHovering2 && (

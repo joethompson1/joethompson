@@ -3,8 +3,8 @@ import './project.scss';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa'
 import { useNavigate } from "react-router-dom";
-import Notebook from '../../assets/notebook.svg';
-import Monitor from '../../assets/monitor.svg';
+import Notebook from '../../assets/notebook.png';
+import Monitor from '../../assets/monitor.png';
 import SoulbounderAnimation from './SoulbounderAnimation'
 import SoulbounderCreateSBT from '../../assets/soulbounderCreateSBT.png';
 import {BsPatchCheckFill} from 'react-icons/bs';
@@ -88,15 +88,15 @@ const Soulbounder = () => {
 				<div className="image-container">
 					<div className="monitor-container">
 						<div className="blank-bg-monitor"></div>
-						<img src={Monitor} alt="Monitor SVG"></img>
-						<div id="soulbounderAnimation" className="loadingContainer">
+						<img className="desktop-img" src={Monitor} alt="Monitor SVG"></img>
+						<div id="soulbounderAnimation" className="loadingContainer-project">
 							<SoulbounderAnimation className="soulbounder-img"/>
 						</div>
 					</div>
 					<div className="notebook-container">
 						<div className="blank-bg-sbt"></div>
-						<img className="soulbounderCreateSBT" src={SoulbounderCreateSBT} alt="Soulbounder Website"></img>
-						<img src={Notebook} alt="Notebook SVG"></img>
+						<img className="soulbounderCreateSBT" src={SoulbounderCreateSBT} alt="Soulbounder create SBT page"></img>
+						<img className="notebook-img-project" src={Notebook} alt="Laptop frame"></img>
 					</div>
 				</div>
 

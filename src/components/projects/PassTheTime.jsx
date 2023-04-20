@@ -5,7 +5,7 @@ import {FaGithub} from 'react-icons/fa';
 import {FaGooglePlay} from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import Phone from '../../assets/iphone.png';
-import Monitor from '../../assets/monitor.svg';
+import Monitor from '../../assets/monitor.png';
 import PassTheTimeGooglePlayStore from '../../assets/passTheTimeGooglePlayStore.png';
 import PassTheTimeImg from '../../assets/passTheTimeGameplay.png';
 import {BsPatchCheckFill} from 'react-icons/bs';
@@ -84,7 +84,7 @@ const PassTheTime = () => {
 				<div className="image-container">
 					<div className="monitor-container-alt">
 						<div className="blank-bg-monitor"></div>
-						<img src={Monitor} alt="Monitor SVG"></img>
+						<img className="desktop-img" src={Monitor} alt="Monitor SVG"></img>
 						<img className="passTheTimeGooglePlayStore" src={PassTheTimeGooglePlayStore} alt="Pass the time Google Play Store"></img>
 					</div>
 					<div className="phone-container">

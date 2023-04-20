@@ -5,7 +5,7 @@ import {FaGithub} from 'react-icons/fa';
 import {FaHackerrank} from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import Phone from '../../assets/iphone.png';
-import Monitor from '../../assets/monitor.svg';
+import Monitor from '../../assets/monitor.png';
 import GUHwebpage from '../../assets/GUHwebpage.png';
 import PlantMedicImg from '../../assets/bush_logocircle.png';
 import {BsPatchCheckFill} from 'react-icons/bs';
@@ -84,7 +84,7 @@ const PassTheTime = () => {
 				<div className="image-container">
 					<div className="monitor-container-alt">
 						<div className="blank-bg-monitor"></div>
-						<img src={Monitor} alt="Monitor SVG"></img>
+						<img className="desktop-img" src={Monitor} alt="Monitor SVG"></img>
 						<img className="GUHwebpage" src={GUHwebpage} alt="GUH webpage"></img>
 					</div>
 					<div className="phone-container">

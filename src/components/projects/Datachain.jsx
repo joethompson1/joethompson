@@ -3,8 +3,8 @@ import './project.scss'
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa'
 import { useNavigate } from "react-router-dom";
-import Notebook from '../../assets/notebook.svg';
-import Monitor from '../../assets/monitor.svg';
+import Notebook from '../../assets/notebook.png';
+import Monitor from '../../assets/monitor.png';
 import DatachainImg from '../../assets/homePage.png';
 import StudentAccountPageWithDegree from '../../assets/studentAccountPageWithDegree.png';
 import {BsPatchCheckFill} from 'react-icons/bs';
@@ -88,14 +88,14 @@ const Datachain = () => {
 			<div className="container project__container">
 				<div className="image-container">
 					<div className="monitor-container">
-						<div id="blank-bg" className="blank-bg-monitor"></div>
+						<div id="blank-bg-monitor" className="blank-bg-monitor"></div>
 						<img className="datachain-image-project" src={DatachainImg} alt="Datachain"></img>
-						<img src={Monitor} alt="Monitor SVG"></img>
+						<img className="desktop-img" src={Monitor} alt="Monitor SVG"></img>
 					</div>
 					<div className="notebook-container">
 						<div className="blank-bg-project"></div>
 						<img className="studentAccountPageWithDegree-image" src={StudentAccountPageWithDegree} alt="Student Account Page with Degree"></img>
-						<img src={Notebook} alt="Notebook SVG"></img>
+						<img className="notebook-img-project" src={Notebook} alt="Notebook SVG"></img>
 					</div>
 				</div>
 
