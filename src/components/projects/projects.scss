@@ -31,9 +31,9 @@ section.dark {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 120%;
+		transform: translate(-50%, -42%);
+		width: 70%;
+		height: 80%;
 		box-shadow: 0vw 1vw 2vw 0vw rgba(209,72,54,1);
 	}
 }
@@ -94,7 +94,6 @@ section.dark {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	border-radius: 5rem 5rem 5rem 5rem;
 }
 
 .____images-wrapper {
@@ -107,45 +106,45 @@ section.dark {
 
 .blank-bg {
 	position: absolute;
-	width: 82%;
-	height: 54%;
+	width: 68%;
+	height: 45%;
 	z-index: -2;
 	background: white;
-	top: 20%;
-	left: 9%;
+	top: 25%;
+	left: 16%;
 }
 
 
 
 .blank-bg-desktop {
 	position: absolute;
-	width: 95%;
-	height: 55%;
+	width: 77%;
+	height: 44%;
 	z-index: -2;
 	background: white;
-	top: 15%;
-	left: 2%;
+	top: 22%;
+	left: 11.5%;
 }
 
 
 .blank-bg-phone {
 	position: absolute;
-	width: 50%;
-	height: 84%;
+	width: 40%;
+	height: 65%;
 	z-index: -2;
 	background: #fafafa;
-	top: 8%;
-	left: 25%;
+	top: 17%;
+	left: 30%;
 }
 
 .color-bg-phone {
 	position: absolute;
-	width: 48%;
-	height: 83%;
+	width: 40%;
+	height: 65%;
 	z-index: -2;
 	background: var(--color-primary-variant);
-	top: 8%;
-	left: 26%;
+	top: 17%;
+	left: 30%;
 }
 
 
@@ -179,7 +178,7 @@ img {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	// margin-top: 3vw;
+	padding: 10%;
 	cursor: pointer;
 }
 
@@ -193,15 +192,14 @@ img {
 
 .about__themes-switch {
 	position: absolute;
-	left: 25%;
-	top: 50%;
-	width: 3%;
-	height: 8%;
+	left: 30%;
+	top: 60%;
+	width: 2.5%;
+	height: 5%;
 	background: var(--color-text-dark);
 	border-radius: 0.2vw;
 	padding: 0.3%;
 	padding-top: 0.5%;
-	// border: 0.1vw solid grey;
 	cursor: pointer;
 	box-shadow: 0vw 0.1vw 0.2vw 0vw rgba(0,0,0,0.7);
 }
@@ -211,7 +209,7 @@ img {
 	width: 100%;
 	height: 100%;
 	border-radius: 0.2vw;
-	border: 0.1vw solid grey;
+	border: 0.05vw solid grey;
 }
 
 .about__themes-switchInner:active {
@@ -227,17 +225,17 @@ img {
 
 .passTheTime-image {
 	position: absolute;
-	top: 20%;
-	left: 30%;
-	width: 40%;
+	top: 24%;
+	left: 32.5%;
+	width: 35%;
 }
 
 
 .plantMedic-image {
 	position: absolute;
-	top: 30%;
-	left: 32.5%;
-	width: 35%;
+	top: 36%;
+	left: 37%;
+	width: 27%;
 	box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.7);
 	border-radius: 100%;
 }
@@ -246,9 +244,9 @@ img {
 .datachain-image {
 	position: absolute;
 	z-index: -1;
-	top: 17%;
-	left: 4%;
-	width: 93%
+	margin-top: 7.5%;
+	left: 13.5%;
+	width: 73%
 }
 
 
@@ -259,15 +257,23 @@ img {
 } 
 
 
+.loadingContainer {
+	padding: 1%;
+	margin-top: 2%
+}
+
+
 .soulbounder-img {
 	position: absolute;
+	width: 90%;
+	top: 10%;
 }
 
 
 
 .about__images-stock {
 	position: relative;
-	margin-top: 7vw;
+	margin-top: 5.5vw;
 	width: 100%;
 }
 
@@ -277,10 +283,10 @@ img {
 	z-index: -1;
 	background: var(--color-primary-variant);
 	border-radius: 15vw;
-	width: 16.5vw;
-	height: 16.5vw;
-	top: -2.7vw;
-	left: 1.5vw;
+	width: 14.2vw;
+	height: 14.4vw;
+	top: 6vw;
+	left: 4vw;
 }
 
 
@@ -299,6 +305,15 @@ img {
 /*----------------------- Media Queries (Large devices) ------------------------*/ 
 
 @media screen and (max-width: 1700px) {
+
+	section.dark {
+		.about__images-bg {
+			transform: translate(-50%, -50%);
+			width: 80%;
+			height: 120%;
+		}
+	}
+
 
 	.about__content h1 {
 		font-size: 5.5vw;
@@ -320,6 +335,7 @@ img {
 
 	.img-container {
 		margin-top: 3vw;
+		padding: 0%;
 	}
 
 
@@ -327,6 +343,87 @@ img {
 	.about__images-stock {
 		margin-top: 10vw;
 	}
+
+	.about__images-bg {
+		width: 16.5vw;
+		height: 16.5vw;
+		top: -2.7vw;
+		left: 1.5vw;
+	}
+
+
+	.about__themes-switch {
+		left: 25%;
+		top: 50%;
+		width: 3%;
+		height: 8%;
+	}
+
+
+	.about__themes-switchInner {
+		border: 0.1vw solid grey;
+	}
+
+
+	.blank-bg-desktop {
+		width: 95%;
+		height: 55%;
+		top: 15%;
+		left: 2%;
+	}
+
+
+	.datachain-image {
+		z-index: -1;
+		left: 5%;
+		width: 90%;
+		margin-top: 2%;
+	}
+
+
+	.blank-bg {
+		width: 82%;
+		height: 54%;
+		top: 20%;
+		left: 9%;
+	}
+
+
+	.loadingContainer {
+		padding: 0;
+		margin-top: 0;
+	}
+
+
+	.blank-bg-phone {
+		width: 50%;
+		height: 84%;
+		top: 8%;
+		left: 25%;
+	}
+
+	.color-bg-phone {
+		width: 48%;
+		height: 83%;
+		top: 8%;
+		left: 26%;
+	}
+
+
+	.passTheTime-image {
+		top: 20%;
+		left: 30%;
+		width: 40%;
+	}
+
+
+	.plantMedic-image {
+		top: 30%;
+		left: 32.5%;
+		width: 35%;
+	}
+
+
 
 }
 
