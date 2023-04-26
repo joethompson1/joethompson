@@ -139,10 +139,10 @@ const Projects = () => {
 					<div className="about__content">
 						<h1>My Projects</h1>
 						<ul>
-							<li onClick={() => navigate("/datachain")} onMouseOver={project1Hover} onMouseOut={project1MouseOut} id="project1"><span>Datachain</span></li>
-							<li onClick={() => navigate("/soulbounder")} onMouseOver={project2Hover} onMouseOut={project2MouseOut} id="project2"><span>Soulbounder</span></li>
-							<li onClick={() => navigate("/passTheTime")} onMouseOver={project3Hover} onMouseOut={project3MouseOut} id="project3"><span>Pass the time</span></li>
-							<li onClick={() => navigate("/plantMedic")} onMouseOver={project4Hover} onMouseOut={project4MouseOut} id="project4"><span>Plant Medic</span></li>
+							<li onClick={() => navigate("/datachain")} onMouseOver={project1Hover} onMouseOut={project1MouseOut} id="project1">Datachain</li>
+							<li onClick={() => navigate("/soulbounder")} onMouseOver={project2Hover} onMouseOut={project2MouseOut} id="project2">Soulbounder</li>
+							<li onClick={() => navigate("/passTheTime")} onMouseOver={project3Hover} onMouseOut={project3MouseOut} id="project3">Pass the time</li>
+							<li onClick={() => navigate("/plantMedic")} onMouseOver={project4Hover} onMouseOut={project4MouseOut} id="project4">Plant Medic</li>
 						</ul>
 
 					</div>
