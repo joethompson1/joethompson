@@ -306,7 +306,7 @@ const Experience = () => {
 								with the aim of helping the two companies advance their mobile presence. 
 								<br></br><br></br>
 
-								I was enlisted as a member of the organising team tasked with conceptualising, 
+								I was part of the organising team tasked with conceptualising, 
 								coordinating, and executing two hackathons, the inaugural of which was the 
 								first ever iX mobile hackathon.
 								I also took part in the first hackathon as a developer where my team won first 
