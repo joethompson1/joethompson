@@ -1299,6 +1299,7 @@ section.dark {
 		top: 420vw;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
+		padding: 0 5%;
 	}
 
 	.programmingLanguages__container > div {
@@ -1342,7 +1343,7 @@ section.dark {
 
 	.experience__frontend-title {
 		height: 12%;
-		width: 22%;
+		width: 35%;
 		border-radius: 4vw;
 	}
 
@@ -1360,6 +1361,10 @@ section.dark {
 
 	.active.experience__frontend-title {
 		transform: translate(-50%,-60%);
+
+		.experience__frontend-title-icon {
+			left: 8%;
+		}
 	}
 
 
@@ -1372,11 +1377,10 @@ section.dark {
 
 	.experience__frontend-title-icon {
 		top: 57%;
-		left: 10%;
+		// left: 0%;
 		font-size: 4.2vw;
 		width: 2.5vw;
 	}
-
 
 	.progressBar {
 		height: 2vw;
