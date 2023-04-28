@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
+
+section {
+	overflow-X: hidden;
+}
+
 section.dark {
 	.IBMRoles__box {
 		background: var(--color-text-dark);
@@ -227,9 +232,10 @@ section.dark {
 
 .experience__whale {
 	position: relative;
+	left: 60%;
 	width: 30%;
 	z-index: 1;
-	transform: scaleX(-1);
+	// transform: scaleX(-1);
 }
 
 .IBMSvg {
@@ -1155,8 +1161,6 @@ section.dark {
 
 	.experience__whale {
 		width: 40%;
-		z-index: 1;
-		transform: scaleX(-1);
 	}
 
 	.IBMSvg {

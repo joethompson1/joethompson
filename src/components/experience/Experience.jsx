@@ -298,19 +298,23 @@ const Experience = () => {
 							<h2 className="experience__work__role">Software Engineer & Business Consultant Intern</h2>
 							<p className="experience__work__dates">Sept 2020 - Sept 2021</p>
 							<p className="experience__work__description"> 
-								I formed part of the core team responsible for overseeing the rebranding 
-								of the iX Mobile service offerings, and I helped in the development of a 
-								dedicated microsite to host the updated offerings. <br></br><br></br>
-
-								I joined two client facing projects as a React Native developer 
-								with the aim of helping the two companies advance their mobile presence. 
+								During my placement year at IBM I was part of the core 
+								team responsible for overseeing the rebranding of iX 
+								Mobile's service offerings, and I helped develop a 
+								dedicated microsite to house the updated offerings. 
 								<br></br><br></br>
 
-								I was part of the organising team tasked with conceptualising, 
-								coordinating, and executing two hackathons, the inaugural of which was the 
-								first ever iX mobile hackathon.
-								I also took part in the first hackathon as a developer where my team won first 
-								place for our VR catalogue application.
+								As a React Native developer, I joined two client-facing 
+								projects to help the companies advance their mobile 
+								presence. <br></br><br></br>
+
+								I was also a member of the organising team responsible 
+								for conceptualising, coordinating, and executing two 
+								hackathons with the former event being the 
+								first-ever iX Mobile Hackathon. Additionally, I 
+								participated in the first hackathon as a developer, 
+								where my team won first place for our VR catalogue 
+								application.
 
 	
 							</p>
@@ -336,7 +340,13 @@ const Experience = () => {
 
 						<div className="hackathonContents__container reveal fade-left">
 							<h2>Great Uni Hack - 2019</h2>
-							<p className="GUHDescription">Programmed an Android app, which used machine learning to classify images of plants using an API. Included functionality whereby plants can be added to a map using google maps API and provide information to the user on how often to water and how much Co2 the plant has absorbed.</p>
+							<p className="GUHDescription">
+								Programmed an Android app which used machine learning to classify images 
+								of plants using an API. The app also included functionality for adding 
+								plants to a map using the Google Maps API and providing users with 
+								information on how often to water the plants and how much CO2 the plants 
+								have absorbed.
+							</p>
 
 							<p className="GUHPrizes">- <i>1st Place: Winner of the AstraZeneca Sustainability Prize</i> <b><a className="" target="_blank" rel="noreferrer" href="https://github.com/joethompson1">Github</a></b></p>
 							<div className="technologies">
@@ -348,8 +358,13 @@ const Experience = () => {
 					<div className="hackathon__container hackathonRight">
 						<div className="hackathonContents__container reveal fade-right">
 							<h2>Morgan Stanley Coding Challenge - 2019</h2>
-							<p>Created a bot that could play the game ultimate tic-tac-toe using articial learning techniques. After the allotted 2 hour development time frame was complete our bot went head to head and challenged the other teams bots through a series of eliminations rounds.</p>
-							<p className="prizes">- <i>Finished 3rd place</i></p>
+							<p>
+								Created a bot that could play the game ultimate tic-tac-toe using machine 
+								learning techniques. After the allotted 2-hour development time frame was 
+								complete, my team's bot went head-to-head and challenged the other teams' 
+								bots through a series of elimination rounds.
+							</p>
+							<p className="prizes">- <i>3rd place</i></p>
 							<div className="technologies">
 								<span className="">Language: Python</span>
 							</div>
@@ -367,7 +382,12 @@ const Experience = () => {
 
 						<div className="hackathonContents__container reveal fade-left">
 							<h2>Student Hack VII - 2020</h2>
-							<p>Using Python we programmed a Myo gesture-controlled armband to be playable on an open source Tetris game. The Myo armband could detect 3 different forms of hand motions to allow the user to play the game without any form of physical input.</p>
+							<p>
+								Using Python, we programmed a Myo gesture-controlled armband to be playable 
+								on an open-source Tetris game. The Myo armband could detect three different 
+								forms of hand motion, allowing the user to play the game without any 
+								physical input.
+							</p>
 							<div className="technologies">
 								<span className="">Language: Python <b> | </b> <b> Technologies: InteliJ, Myo Armband </b></span>
 							</div>
@@ -377,7 +397,14 @@ const Experience = () => {
 					<div className="hackathon__container hackathonRight">
 						<div className="hackathonContents__container reveal fade-right">
 							<h2>IBM iX Mobile - 2021</h2>
-							<p>Coded an iOS a POC mobile application for one of IBM's clients. I developed the AR feature with the help of Apple's RealityKit. This was my first time using the language Swift so I had to learn and adapt quickly to achieve our teams objectives. The app showcased a catalog of items giving the user the ability to view the companies products from the comfort of their home using the built in AR functionality.</p>
+							<p>
+								Coded an iOS proof-of-concept mobile application for one of IBM's clients. I 
+								developed the augmented reality feature with the help of Apple's RealityKit. 
+								This was my first time using the Swift programming language, so I had to 
+								learn and adapt quickly to achieve our team's objectives. The app showcased 
+								a catalog of items, giving the user the ability to view the company's 
+								products from the comfort of their home using the built-in AR functionality.
+							</p>
 							<p className="prizes">- <i>Overall winners of hackathon</i></p>
 							<div className="technologies">
 								<span className="">Language: Swift <b> | </b> <b> Technologies: Xcode, RealityKit </b></span>
@@ -399,7 +426,7 @@ const Experience = () => {
 							</div>
 							<div className="experience__frontend-title-text">
 								<h3>Languages:</h3>
-								<p className="experience__frontend-p">Progress bars represent number of years since first started the language</p>
+								<p className="experience__frontend-p">Progress bars represent number of years since first started with the language</p>
 							</div>
 						</div>
 
