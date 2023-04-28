@@ -230,7 +230,7 @@ const Experience = () => {
 				width = 22;
 				maxWidth = 75;
 			} else if (windowWidth <= 600) {
-				width = 45;
+				width = 37;
 				maxWidth = 75;
 			}
 
@@ -255,7 +255,7 @@ const Experience = () => {
 				maxWidth = 22;
 		 	} else if (windowWidth <= 600) {
 				width = 75;
-				maxWidth = 45;
+				maxWidth = 37;
 			}
 
 			id = setInterval(frame3, 10);
