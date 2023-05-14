@@ -38,8 +38,8 @@ const App = () => {
 		<>
 			<Helmet>
                 <meta charSet="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-                <title>Joe Thompson's Portfolio Website</title>
-                <meta name="description" content="A protfolio website showcasing the most noteworthy projects by Joe Thompson" />
+                <title>Joe Thompson</title>
+                <meta name="description" content="My portfolio website showcasing skills, achievements and my most noteworthy projects." />
                 <link rel="canonical" href="https://joethompson.co.uk" />
             </Helmet>
 
