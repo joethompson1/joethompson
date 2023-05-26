@@ -295,7 +295,7 @@ const Experience = () => {
 					<div className="experience__work__card__container">
 						<div className="workDivider">
 							<h1 className="experience__work__title">iX Mobile</h1>
-							<h2 className="experience__work__role">Software Engineer & Business Consultant Intern</h2>
+							<h2 className="experience__work__role">Software Engineer Intern</h2>
 							<p className="experience__work__dates">Sept 2020 - Sept 2021</p>
 							<p className="experience__work__description"> 
 								During my placement year at IBM I was part of the core 
