@@ -26,7 +26,7 @@ const PassTheTime = () => {
 
 	let run = false;
 	function reveal() {
-	  var reveals = document.querySelectorAll(".reveal");
+	  var reveals = document.querySelectorAll(".progressBar2");
 	  var revealContainer = document.querySelector('.contents__languages');
 
 	  for (var i = 0; i < reveals.length; i++) {
@@ -147,7 +147,7 @@ const PassTheTime = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>Java</h4>
-										<div id="Java" className="progressBar2 reveal"></div>
+										<div id="Java" className="progressBar2"></div>
 										<small className="text-light">76.3%</small>
 									</div>
 								</article>

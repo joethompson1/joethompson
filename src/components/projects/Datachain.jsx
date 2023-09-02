@@ -24,7 +24,7 @@ const Datachain = () => {
 	let run = false;
 
 	function reveal() {
-	  	var reveals = document.querySelectorAll(".reveal");
+	  	var reveals = document.querySelectorAll(".progressBar2");
 	  	var revealContainer = document.querySelector('.contents__languages');
 
 	  	for (var i = 0; i < reveals.length; i++) {
@@ -160,7 +160,7 @@ const Datachain = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>HTML</h4>
-										<div id="HTML" className="progressBar2 reveal"></div>
+										<div id="HTML" className="progressBar2"></div>
 										<small className="text-light">19.2%</small>
 									</div>
 								</article>

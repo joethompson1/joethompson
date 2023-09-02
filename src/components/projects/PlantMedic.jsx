@@ -26,7 +26,7 @@ const PassTheTime = () => {
 
 	let run = false;
 	function reveal() {
-	  var reveals = document.querySelectorAll(".reveal");
+	  var reveals = document.querySelectorAll(".progressBar2");
 	  var revealContainer = document.querySelector('.contents__languages');
 
 	  for (var i = 0; i < reveals.length; i++) {
