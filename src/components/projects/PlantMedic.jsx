@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './project.scss'
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa';
@@ -35,9 +35,9 @@ const PassTheTime = () => {
 	    var elementVisible = windowHeight*0.3;
 
 
-	    if (elementTop < (windowHeight - (elementVisible))) {
+	    if (elementTop < (windowHeight - (elementVisible)) && !run) {
 	      reveals[i].classList.add("active");
-	      if (reveals[i].classList.contains("progressBar2") && !run) {
+	      if (reveals[i].classList.contains("progressBar2")) {
 	      	Move2();
 	      	run = true;
 	      }
@@ -45,9 +45,6 @@ const PassTheTime = () => {
 
 	  }
 	}
-
-	window.addEventListener("scroll", reveal);
-
 
 	var i = 0;
 	const Move2 = () => {
@@ -71,6 +68,17 @@ const PassTheTime = () => {
 	  }
 	}
 
+	useEffect(() => {
+	    window.addEventListener('scroll', function() {
+		  reveal();
+		});
+
+	    return () => {
+		    window.removeEventListener('scroll', function() {
+				reveal();
+			});
+	    };
+	}, []);
 
 
 	return (
@@ -148,7 +156,7 @@ const PassTheTime = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>XML</h4>
-										<div id="XML" className="progressBar2 reveal"></div>
+										<div id="XML" className="progressBar2"></div>
 										<small className="text-light">23.7%</small>
 									</div>
 								</article>

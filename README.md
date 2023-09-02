@@ -13,7 +13,7 @@
   <h3 align="center">My Portfolio Website</h3>
 
   <p align="center">
-    A portfolio website created by, and showcasing the work of Joe Thompson.
+    My portfolio website, showcasing my past experience and best projects.
     <br />
     <br />
     <a href="https://joethompson.co.uk"><strong>View Portfolio Website »</strong></a>
@@ -75,7 +75,6 @@ Anyone wishing to clone and use the project may do so at their own discretion, a
 The technologies I used to build my portfolio are listed below:
 
 * [![React][React.js]][React-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 * [![NPM][NPM]][NPM-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

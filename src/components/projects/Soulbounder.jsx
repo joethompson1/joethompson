@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import React, { useState, useEffect }  from 'react';
 import './project.scss';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa'
@@ -34,9 +34,9 @@ const Soulbounder = () => {
 	    var elementVisible = windowHeight*0.3;
 
 
-	    if (elementTop < (windowHeight - (elementVisible))) {
+	    if (elementTop < (windowHeight - (elementVisible)) && !run) {
 	      reveals[i].classList.add("active");
-	      if (reveals[i].classList.contains("progressBar2") && !run) {
+	      if (reveals[i].classList.contains("progressBar2")) {
 	      	Move2();
 	      	run = true;
 	      }
@@ -44,9 +44,6 @@ const Soulbounder = () => {
 
 	  }
 	}
-
-	window.addEventListener("scroll", reveal);
-
 
 	var i = 0;
 	const Move2 = () => {
@@ -74,7 +71,17 @@ const Soulbounder = () => {
 	  }
 	}
 
+	useEffect(() => {
+	    window.addEventListener('scroll', function() {
+		  reveal();
+		});
 
+	    return () => {
+		    window.removeEventListener('scroll', function() {
+				reveal();
+			});
+	    };
+	}, []);
 
 
 	return (
@@ -160,7 +167,7 @@ const Soulbounder = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>CSS</h4>
-										<div id="CSS" className="progressBar2 reveal"></div>
+										<div id="CSS" className="progressBar2"></div>
 										<small className="text-light">6.9%</small>
 									</div>
 								</article>
@@ -168,7 +175,7 @@ const Soulbounder = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>JavaScript</h4>
-										<div id="JavaScript" className="progressBar2 reveal"></div>
+										<div id="JavaScript" className="progressBar2"></div>
 										<small className="text-light">1.2%</small>
 									</div>
 								</article>
@@ -176,7 +183,7 @@ const Soulbounder = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>Solidity</h4>
-										<div id="Solidity" className="progressBar2 reveal"></div>
+										<div id="Solidity" className="progressBar2"></div>
 										<small className="text-light">2.7%</small>
 									</div>
 								</article>
@@ -230,9 +237,7 @@ const Soulbounder = () => {
 			</div>
 
 		</section>
-
 	)
-
 }
 
 

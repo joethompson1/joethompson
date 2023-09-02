@@ -115,10 +115,8 @@ const Experience = () => {
    	const [dayNight, setDayNight] = useState(getDayNight(getTheme()));
    	const [sunMoonStyle, setSunMoonStyle] = useState(getSunMoonStyle(getTheme()));
 
-
-
-
 	let run = false;
+
 	function reveal() {
 	  var reveals = document.querySelectorAll(".reveal");
 
@@ -171,9 +169,6 @@ const Experience = () => {
 	  }
 	}
 
-	// window.addEventListener('resize', CheckIfViewingFromPhone);
-
-
 	var i = 0;
 	const Move = () => {
 	  if (i === 0) {
@@ -200,7 +195,6 @@ const Experience = () => {
 	        html.style.width = width + "%";
 	        css.style.width = width + "%";
 	        javascript.style.width = width + "%";
-	        react.style.width = (width/100 * 12.5) + "%";
 	        typescript.style.width = (width/100 * 37.5) + "%";
 	        sql.style.width = (width/100 * 87.5) + "%";
 	        python.style.width = width + "%";
@@ -458,14 +452,6 @@ const Experience = () => {
 							<article className="experience__details">
 								<BsPatchCheckFill className="experience__details-icon"/>
 								<div className="experience__details__content">
-									<h4>React</h4>
-									<div id="react" className="progressBar"></div>
-									<small className="text-light-experience">~1 Year</small>
-								</div>
-							</article>
-							<article className="experience__details">
-								<BsPatchCheckFill className="experience__details-icon"/>
-								<div className="experience__details__content">
 									<h4>Typescript</h4>
 									<div id="typescript" className="progressBar"></div>
 									<small className="text-light-experience">~3 Years</small>
@@ -545,18 +531,6 @@ const Experience = () => {
 							<article className="experience__details">
 								<BsPatchCheckFill className="experience__details-icon"/>
 								<div>
-									<h4>LaTex</h4>
-								</div>
-							</article>
-							<article className="experience__details">
-								<BsPatchCheckFill className="experience__details-icon"/>
-								<div>
-									<h4>Eclipse IDE</h4>
-								</div>
-							</article>
-							<article className="experience__details">
-								<BsPatchCheckFill className="experience__details-icon"/>
-								<div>
 									<h4>Android Studio</h4>
 								</div>
 							</article>
@@ -612,6 +586,24 @@ const Experience = () => {
 								<BsPatchCheckFill className="experience__details-icon"/>
 								<div>
 									<h4>Truffle</h4>
+								</div>
+							</article>
+							<article className="experience__details">
+								<BsPatchCheckFill className="experience__details-icon"/>
+								<div>
+									<h4>React</h4>
+								</div>
+							</article>
+							<article className="experience__details">
+								<BsPatchCheckFill className="experience__details-icon"/>
+								<div>
+									<h4>Vue</h4>
+								</div>
+							</article>
+							<article className="experience__details">
+								<BsPatchCheckFill className="experience__details-icon"/>
+								<div>
+									<h4>Svelte</h4>
 								</div>
 							</article>
 						</div>

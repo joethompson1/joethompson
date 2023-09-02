@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import React, { useState, useEffect }  from 'react';
 import './project.scss'
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import {FaGithub} from 'react-icons/fa'
@@ -21,31 +21,26 @@ const Datachain = () => {
 	};
 
 	const [isDark, setIsDark] = useState(getTheme());
-
 	let run = false;
+
 	function reveal() {
-	  var reveals = document.querySelectorAll(".reveal");
-	  var revealContainer = document.querySelector('.contents__languages');
+	  	var reveals = document.querySelectorAll(".reveal");
+	  	var revealContainer = document.querySelector('.contents__languages');
 
-	  for (var i = 0; i < reveals.length; i++) {
-	    var windowHeight = window.innerHeight;
-	    var elementTop = revealContainer.getBoundingClientRect().top;
-	    var elementVisible = windowHeight*0.3;
+	  	for (var i = 0; i < reveals.length; i++) {
+	    	var windowHeight = window.innerHeight;
+	    	var elementTop = revealContainer.getBoundingClientRect().top;
+	    	var elementVisible = windowHeight*0.3;
 
-
-	    if (elementTop < (windowHeight - (elementVisible))) {
-	      reveals[i].classList.add("active");
-	      if (reveals[i].classList.contains("progressBar2") && !run) {
-	      	Move2();
-	      	run = true;
-	      }
-	    }
-
-	  }
+	    	if (elementTop < (windowHeight - (elementVisible)) && !run) {
+	      		reveals[i].classList.add("active");
+	      		if (reveals[i].classList.contains("progressBar2")) {
+	      			Move2();
+	      			run = true;
+	      		}
+	    	}
+	  	}
 	}
-
-	window.addEventListener("scroll", reveal);
-
 
 	var i = 0;
 	const Move2 = () => {
@@ -74,6 +69,19 @@ const Datachain = () => {
 	    }
 	  }
 	}
+
+
+	useEffect(() => {
+	    window.addEventListener('scroll', function() {
+		  reveal();
+		});
+
+	    return () => {
+		    window.removeEventListener('scroll', function() {
+				reveal();
+			});
+	    };
+	}, []);
 
 
 
@@ -124,7 +132,7 @@ const Datachain = () => {
 					<div className="contents__description">
 						<h3>Description:</h3>
 						<p>
-							This prototype application was created to try and highlight to universities 
+							This application was created to try and highlight to universities 
 							that the adoption of blockchain technology is not only beneficial to their organisation, 
 							but also to their past, present, and future students. This is because creating a digital 
 							degree brings with it added utility to both students and employers, whilst at the same 
@@ -160,7 +168,7 @@ const Datachain = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>CSS</h4>
-										<div id="CSS" className="progressBar2 reveal"></div>
+										<div id="CSS" className="progressBar2"></div>
 										<small className="text-light">28%</small>
 									</div>
 								</article>
@@ -168,7 +176,7 @@ const Datachain = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>JavaScript</h4>
-										<div id="JavaScript" className="progressBar2 reveal"></div>
+										<div id="JavaScript" className="progressBar2"></div>
 										<small className="text-light">28.8%</small>
 									</div>
 								</article>
@@ -176,7 +184,7 @@ const Datachain = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>Go</h4>
-										<div id="Go" className="progressBar2 reveal"></div>
+										<div id="Go" className="progressBar2"></div>
 										<small className="text-light">2.8%</small>
 									</div>
 								</article>
@@ -184,7 +192,7 @@ const Datachain = () => {
 									<BsPatchCheckFill className="technologies__details-icon"/>
 									<div className="technologies__languages">
 										<h4>Shell</h4>
-										<div id="Shell" className="progressBar2 reveal"></div>
+										<div id="Shell" className="progressBar2"></div>
 										<small className="text-light">21.2%</small>
 									</div>
 								</article>
