@@ -179,12 +179,37 @@ section.dark {
 }
 
 
+.experience__conjoin__container {
+	position: absolute;
+	width: 100%;
+	top: 24vw;
+	padding: 0 10%;
+
+	.conjoin-tile {
+		display: flex;
+		backdrop-filter: blur(2px);
+		gap: 4vw;
+		background: rgba(0, 0, 0, 0.03);
+		padding: 2vw 4vw;
+		border-radius: 5vw;
+
+		.title {
+			margin: auto 0;
+			flex: 1;
+		}
+
+		.content {
+			flex: 2;
+		}
+	}
+
+}
 
 
 .experience__work__container {
 	position: relative;
 	width: 100%;
-	top: 25vw;
+	top: 38vw;
 	padding: 0 10%;
 }
 
@@ -231,7 +256,6 @@ section.dark {
 	left: 60%;
 	width: 30%;
 	z-index: 1;
-	// transform: scaleX(-1);
 }
 
 .IBMSvg {
@@ -814,6 +838,9 @@ section.dark {
 	  height: 242vw;
 	}
 
+	.experience__conjoin__container {
+	}
+
 	.experience__work__card__container {
 		height: 25vw;
 	}
@@ -821,6 +848,7 @@ section.dark {
 	.experience__work__title {
 		font-size: 2.8vw;
 	}
+
 
 	.experience__work__role {
 		font-size: 1.7vw;
@@ -1150,10 +1178,22 @@ section.dark {
 	}
 
 
-	.experience__work__container {
-		top: 95vw;
+	.experience__conjoin__container {
+		position: absolute;
+		width: 100%;
+		top: 24vw;
 		padding: 0 5%;
 	}
+
+
+	.experience__work__container {
+		top: 105vw;
+		padding: 0 5%;
+	}
+
+	.conjoin-tile {
+			padding: 4vw 4vw !important;
+		}
 
 	.experience__whale {
 		width: 40%;

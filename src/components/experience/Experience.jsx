@@ -278,12 +278,42 @@ const Experience = () => {
 				
 			<img className="experience__title__rod" src={FishingRod} alt=""></img>
 			<img className="experience__title__fisherthem" src={Fisherthem} alt=""></img>
+			
 			<div className="experience__water__container">
 				<div className="experience__fishingLine" style={fishingLineHeight}>
 					<img className="experience__fishingHook" src={Hook} alt=""></img>
 				</div>
 				<FishSwimming />
 				<FishSwimming2 />
+
+				<div className="experience__conjoin__container">
+					<div className="conjoin-tile">
+						<div className="title">
+							<h1 className="experience__work__title">Coinjoin AI</h1>
+							<h2 className="experience__work__role">Software Engineering Consultant</h2>
+							<p className="experience__work__dates">June 2023 - Present</p>
+						</div>
+						<div className="content">
+							<p className="experience__work__description">
+								Part of a small dynamic team working to develop various innovative 
+								demo applications to showcase the startup's capabilities to investors 
+								and partners.<br></br><br></br> 
+
+								In one demo, I used SvelteKit to create an AI personal 
+								assistant that provided users with dynamic causal graphs for daily 
+								decision-making, generated in real-time through the use of a 
+								large language model. <br></br><br></br>
+
+								In another demo, built with Vue, we demonstrated 
+								how businesses could better understand their customer base by modeling 
+								demographics and analyzing various parameters. These demos highlighted 
+								the transformative potential of our technology, offering investors a 
+								clear vision of how our solutions could revolutionise decision-making 
+								and customer insights across industries.
+							</p>
+						</div>
+					</div>
+				</div>
 				<div className="experience__work__container">
 					<img className="experience__whale" src={Whale} alt=""></img>
 					<div className="experience__work__card__container">
@@ -604,6 +634,12 @@ const Experience = () => {
 								<BsPatchCheckFill className="experience__details-icon"/>
 								<div>
 									<h4>Svelte</h4>
+								</div>
+							</article>
+							<article className="experience__details">
+								<BsPatchCheckFill className="experience__details-icon"/>
+								<div>
+									<h4>React Native</h4>
 								</div>
 							</article>
 						</div>
